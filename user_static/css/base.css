@@ -3,16 +3,17 @@
 /* Just read a tip to organize CSS-properties alphabetically. Sounds like a good idea! I usually just try to somehow order them by order of significance to the design (like width and height first and grouped together), but this seems better. Except that width and height is separate-
 */
 
+/*
 * {
 	border: 0px;
 	margin: 0px;
 	outline: 0px;
-	padding: 0px;}
+	padding: 0px;
+}
+*/
 
 body {
 	background-color: #d9ffa7;
-	height: 100%;
-	width: 100%;
 	padding: 10 15 10 15}
 
 p {
@@ -25,3 +26,8 @@ p {
 	height: 100%;
 	width: 100%;}
 
+
+/* Coloring products when linking to them */
+a.vegan { color: #0c3; }
+a.potvegan { color: #ccc; }
+a.notvegan { color: #c00; }

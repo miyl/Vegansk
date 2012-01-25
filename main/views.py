@@ -38,3 +38,8 @@ def search_test(request):
     else:
         return HttpResponse('Please submit a search term.')
 
+
+def list_all(request):
+    products = product.objects.all()
+    return render_to_response('list_results.html', { 'products': products }, 
+            context_instance=RequestContext(request))
