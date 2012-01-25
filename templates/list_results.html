@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Liste af produkter{% endblock %}
+
+{% block content %}
+  <h1>Liste af produkter</h1>
+<p>Der er {{ products|length }} produkter listet:</p>
+<ul>
+    {% for product in products %}
+    <li>
+      <a href="/id/{{ product.id }}" class="{{ product.csstags }}">{{ product.name }}</a>
+      {% if product.bio %}Ø{% endif %}
+      {% if product.fair_trade %}F{% endif %}
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

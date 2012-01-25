@@ -86,6 +86,21 @@ class product(models.Model):
     def __unicode__(self):
         return self.name
 
+    def csstags(self):
+      cs = []
+      if self.vegan == 'V':
+        cs.append("vegan")
+      elif self.vegan == 'P':
+        cs.append("potvegan")
+      elif self.vegan == 'I':
+        cs.append("notvegan")
+      if self.bio:
+        cs.append("bio")
+      if self.fair_trade:
+        cs.append("fairtrade")
+
+      return " ".join(cs)
+
     class Meta:
         ordering = ['name']
 

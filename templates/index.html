@@ -1,30 +1,10 @@
-<html>
+{% extends "base.html" %}
+{% block title %}Velkommen!{% endblock %}
 
-<head>
-<meta http-equiv="content-type" content="text/html; charset=utf-8">
-<!doctype html>
-<title>Velkommen til Vegansk.dk!</title>
-<link href="{{ STATIC_URL }}css/base.css" rel="stylesheet" type="text/css" />
-<link href="{{ STATIC_URL }}css/index.css" rel="stylesheet" type="text/css" />
-</head>
+{% block content %}
+  <h1>Velkommen til Vegansk.dk!</h1>
+<p>Sidens formål er indeksere produkter i Danmark mhbp. om de er veganske. Samtidig kan man også søge efter om et produkt er økologisk og/eller fair trade, og om produktet ydermere er uden de udbredte allergener: Nødder, Soja, samt gluten.</p>
 
-<body>
-<div id="con">
-<header><h1>Velkommen til Vegansk.dk!</h1></header>
+<p>Kvaliteten af indholdet afhænger i høj grad af brugerne, som udfylder databasen. Tag ned i en forretning og fotografér eller notér informationerne, og vælg derefter "Tilføj nyt produkt" i menuen eller søg og find det produkt du gerne vil tilføje informationer til, og udfyld formularen. Alle tilføjelser og redigerer evalueres af en moderator. Hvis du oplyser din e-mail-adresse kan moderatoren svare tilbage hvis vedkommende mener der mangler noget information eller lign., i stedet for at redigeringen/tilføjelsen blot bliver afvist.</p>
 
-    <form action="/search/" method="get">
-    <input type="text" name="q">
-    <input type="submit" value="Search">
-
-
-<p>Sidens formål er indeksere produkter i Danmark mhbp. om de er veganske.
-Samtidig kan man som veganer også søge efter om et produkt er økologisk og/eller fair trade og som allergiker søge om produktet ydermere er uden de udbredte allergener: Nødder, Soja, samt gluten.</p>
-
-<p>Man kan søge på produktnavn, mærke, producent, ingrediens og inkludere og ekskludere på basis af diverse kriterier. Et produkt findes primært på sit nummer, såsom
-vegansk.dk/id/15 , men det kan også findes via en adresse som vegansk.dk/produkt/urtekram/riskager_med_chokolade.
-</p>
-
-<p>Kvaliteten af indholdet afhænger i høj grad af brugerne, som udfylder databasen. Tag ned i en forretning og fotografér eller notér informationerne, og vælg derefter "Tilføj nyt produkt" i menuen eller søg og find det produkt du gerne vil tilføje informationer til, og udfyld formularen. Alle tilføjelser og redigerer evalueres af en moderator. Hvis du oplyser din e-mail-adresse kan moderatoren svare tilbage hvis vedkommende mener der mangler noget information eller lign., i stedet for at redigeringen/tilføjelsen blot bliver afvist.
-</body>
-</div>
-</html>
+{% endblock %}
