@@ -1,0 +1,3 @@
+<p>Man kan søge på produktnavn, mærke, producent, ingrediens og inkludere og ekskludere på basis af diverse kriterier. Et produkt findes primært på sit nummer, såsom
+vegansk.dk/id/15 , men det kan også findes via en adresse som vegansk.dk/produkt/urtekram/riskager_med_chokolade.
+</p>
