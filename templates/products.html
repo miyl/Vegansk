@@ -1,0 +1,51 @@
+<html>
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<!doctype html>
+<title>Vegansk.dk: Produkter</title>
+<link href="{{ STATIC_URL }}css/base.css" rel="stylesheet" type="text/css" />
+<link href="{{ STATIC_URL }}css/products.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<h1>Vegansk.dk: Produkter</h1>
+<p>Produktnavn: {{ product.name }}</p>
+<p>Mærke: {{ product.brands }}</p>
+<p>Producent: {{ product.manufacturers }}</p>
+<p>Er produktet vegansk: {{ product.vegan }}</p>
+<p>Billede:</p> 
+{% if product.picture %} 
+    <img src="{{ product.picture }}"></img>
+{% else %}
+    <p>Billede mangler.</p>
+{% endif %}
+<p>
+  Fås i:
+  <ul> 
+    {% for store in product.stores.all %}
+    <li>{{ store }}</li>
+    {% endfor %}
+  </ul>
+</p>
+
+<p>
+  Ingredienser:
+  <ul> 
+    {% for ing in product.ingredients.all %}
+    <li>{{ ing }}</li>
+    {% endfor %}
+  </ul>
+</p>
+
+<p>Gluten: {{ product.gluten }}</p>
+<p>Soja: {{ product.soy }}</p>
+<p>Økologisk: {{ product.bio }}</p>
+<p>Fair Trade: {{ product.fair_trade }}</p>
+
+<!-- En del af disse felter skal senere gøres til links, så man eks. kan klikke på "Alpro" og derigennem lave en søgning på alle produkter af Alpro.  -->
+
+</body>
+
+</html>
