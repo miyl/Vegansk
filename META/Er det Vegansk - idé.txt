@@ -1,0 +1,122 @@
+Er det Vegansk? / Er den vegansk? / Er produktet vegansk? / Vegansk?
+
+Grundlæggende idé:
+Siden skal først og fremmest være en dansk, søgbar liste over samtlige produkter tilgængelige på det danske marked, og om de er veganske, og hvor de kan fås. Indholdet udfyldes af enten manuelt udvalgte brugere eller alle.
+
+Man kan søge på alt: Brand, Produktnavn, Producent, Fås i, Ingrediensliste(?) og så kan man søge under 'ikke-veganske', 'veganske' og 'muligvis veganske'.
+
+Min idé er desuden at verificerede veganske produkter har en svag grøn baggrund, verificerede ikke-veganske produkter har en svag rød baggrund, mens 'i tvivl' har en hvid baggrund.
+
+Kød, mælk, ost, honning osv. synes jeg ikke, giver nogen mening, at inkludere. Det må stå på forsiden. Eller på en meta-/om-side.
+
+I praksis må der vel kun være tale om 2-3 sider:
+Forside: med grundinfo og søgemuligheder.
+Produktside: Med variabel info om det givne produkt.
+Tilføj nyt produkt: Indhold går igennem en moderator først. Moderatorer, folk der stoles på, kan selv direkte tilføje varer.
+
+Eksempel:
+Billede:
+Brand: Kellogg's
+Produktnavn: Cornflakes
+Producent: (Hvis det er produceret af et andet firma for et brand)
+Fås i: Kvickly, Føtex
+Ingrediensliste: Hele ingredienslisten nævnes her.
+Er der potentielt ikke-veganske stoffer i?:
+	Hvis ja: Liste over dem og individuel info om de er blevet tjekket ift. producenten.
+		Hvis ja: Producentens svar kan indsættes her.
+Kommentar-felt til brugernes kommentarer evt.
+Gluten:
+Soja:
+Sidst opdateret: 
+
+Derudover:
+Se liste over produkter fra dette firma.
+(Se liste over lignende produkter.)
+
+Hvordan gøres dét i praksis? Min idé er django.
+
+Jeg tænker at 'Mærke', 'Producent' og 'Fås i' både kan vælges ud fra en drop down-menu og skrives i et felt. Hver gang der så skrives noget nyt i feltet, tilføjes det automatisk til drop down-menuen.
+
+Hvilke felter SKAL være udfyldte? Mærke, Produktnavn, Producent? Hvis man kan finde en tom produktside uden ingrediensliste, er det vel næsten irriterende? Medmindre de frasorteres i de normale søgninger, og i stedet ligger under en særlig kategori der hedder eks.: Ufuldstændige.
+
+Idéer: 
+* Måske en praktisk funktion hvor man kan tilføje nye produkter udelukkende via indsætning i adresselinien, hvis den da kan være så lang? Kunne være smart, så personer bare kunne skrive de produkter, de gerne vil tilføje, i et forum, og at nogen der så har rettigheder til at tilføje dem, bare lige skal indsætte teksten i adresselinien og trykke enter!
+Man kan også gøre sådan, at den samme formular er tilgængelig for alle, men at forslaget først skal igennem en moderator.
+
+* Idéen ved også at liste ikke-veganske, er at man så er sikker på, at der er blevet taget stilling til et givent produkt, og desuden at man så kan påtage sig opgaven at prøve at få det ændret. Også mht. de 'muligvis veganske' produkter.
+
+* Varerne kategoriseres vel efter hvordan supermarkederne opdeler dem?
+
+* 3 sider:
+	* Forside med søgning og evt. kategorier og nogle enkeltfirmaer.
+	* Produktside
+	* Hjælpeside - med beskrivelser af eks. hvad de forskellige felter skal indeholde/hvordan siden virker.
+
+* Alle varer har både et uuid nr. og et produktnavn. Man skal gerne kunne skrive http://www.vegansk.dk/kelloggs/frosties
+i adressefeltet, eller http://www.vegansk.dk/1021. Når et produkt slettes og et nyt tilføjes er det måske alligevel bedst, at det får et nyt id og ikke overtager et gammelt. Forsiden skal så ha' en liste over kategorierne og evt. nogle underfirmaer, alá jubiis kategorier.
+
+Det kunne faktisk være smart, hvis der under UUID kunne være navne på fødevaren i flere forskellige sprog. Så kan den samme database køre internationalt, hvis dét da er en god idé?
+
+Også andet end fødevarer! Evt. en diverse-kategori, til vegansk blæk mm.
+
+Der kan evt. også være en side dedikeret til mærket, hvor man kan læse lidt om firmaet bag, se et link til deres hjemmeside osv. (og evt. en let måde at kontakte dem på, så deres produkter kan veganiseres!)
+
+
+Django:
+
+class Product(models.Model):
+    name = models.CharField(max_length=50)
+    brand = models.CharField(max_length=25)
+    producer = models.CharField(max_length=25)
+    picture = models.ImageField(upload_to='produkt')
+    available = models.Charfield(max_length=200) # burde måske nærmere være en liste af en art.
+    ingredients = models.TextField(blank=true)
+    potentially_not_vegan = models.BooleanField()
+    gluten = models.BooleanField()
+    soy = models.BooleanField()
+    organic = models.BooleanField()
+    fair_trade = models.BooleanField()
+    last_updated = models.DateTimeField('date published')
+
+Måske man skal kunne vælge 'Ved ikke'. Og produkter med 'ved ikke' i beskrivelserne frasorteres så automatisk. Kan vælges med et "inkludér 'ved ikke'" afkrydsningsfelt.
+
+Måske skal det være:
+Er produktet vegansk?
+	> Nej > Er produktet potentielt vegansk?
+	> Nej > Hvorfor?
+
+
+Idé til ingredienslisting:
+Man bruger en dropdown-menu eller lign.
+
+N.B.: Rækkefølgen er relevant ift. sundhed, da ingredienser på produktet er listet efter hvor stor en del af produktet de er i gram, med det, der er den største del, først.
+
+Ingrediens 1:
+Ingrediens 2:
+Ingrediens 3:
+Ingrediens 4:
+Ingrediens 5:
+
+Denne liste indeholder så alle ingredienser, både listet som tilsætningsstof og listet som e-nummer. Listen skriver så selv enten e-nummeret eller navnet i parantes, afhængigt af hvad man nu synes listen skal bruge som det primære.
+Siden har så 3 lister:
+veganske
+potentielt_veganske
+animalske
+
+som den automatisk krydstjekker med i en lang IF THEN-kæde.
+Før potentielt_veganske afgører om produktet kun ER potentielt vegansk, skal det tjekkes om ingrediensen er blevet skrevet nedenunder i listen over ingredienser, firmaet er blevet kontaktet omkring.
+
+Siden tager automatisk de potentielt veganske ingredienser og lister dem på en liste separat nedenunder også, og ligeledes med de animalske. Så kan de hurtigt kopieres et sted hen, eks. til en IM-samtale, til et forum, eller til en e-mail til en producent.
+Ifbm. de potentielt animalske listes de også et sted, hvor man kan vælge kilden til den givne ingrediens:
+Ikke tjekket eller vides ikke, animalsk, vegansk.
+Herefter afgøres det endeligt, om produktet er vegansk eller ej, css'en bliver påvirket osv.
+Idé til hvordan processen ca. ser ud:
+
+IF ingredients IN animalsk THEN not_vegan
+    ELSE IF ingredients IN limbo THEN potentially_vegan
+    ELSE vegan
+
+Eller noget i den stil. Limbo-skridtet er så lidt mere avanceret i sig selv, da den jo skal tjekke om kilderne er blevet tjekket, og sige:
+* not_vegan hvis et enkelt stof står til "animalsk"
+* potentially_vegan hvis et enkelt stof står til "Ikke tjekket eller vides ikke".
+* vegan hvis listen overlever de 2 forudgående trin.

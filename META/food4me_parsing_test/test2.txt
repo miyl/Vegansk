@@ -1,0 +1,698 @@
+100 - Curcumin (Turmeric, Gurkemejefarve)
+100 - Curcumin (Turmeric, Gurkemejefarve)
+101 - Riboflavin (Laktoflavin, Vitamin B2)
+101 - Riboflavin (Laktoflavin, Vitamin B2)
+101 - Riboflavin-5’-phosphat (Vitamin B2)
+102 - Tartrazin (FD&C Yellow no 5)
+102 - Tartrazin (FD&C Yellow no 5)
+104 - Quinolingult (D&C Yellow no 10)
+104 - Quinolingult (D&C Yellow no 10)
+110 - Sunset Yellow FCF (Orange Yellow S, FD&C Yellow no 6)
+110 - Sunset Yellow FCF (Orange Yellow S, FD&C Yellow no 6)
+1101 - Papain.
+1101 - Papain.
+1103 - Invertase
+1103 - Invertase
+1105 - Lysozym
+1105 - Lysozym
+120 - Carminer (Carminsyre, Cochenille)
+120 - Carminer (Carminsyre, Cochenille)
+1200 - Polydextrose
+1200 - Polydextrose
+1201 - Polyvinylpyrrolidon (Povidone, PVP)
+1201 - Polyvinylpyrrolidon (Povidone, PVP)
+1202 - Polyvinylpolypyrrolidon (Crosspovidone, PVPP)
+1202 - Polyvinylpolypyrrolidon (Crosspovidone, PVPP)
+122 - Azorubin (Carmoisin)
+122 - Azorubin (Carmoisin)
+123 - Amaranth (FD&C Red no 2)
+123 - Amaranth (FD&C Red no 2)
+124 - Ponceau 4R (Cochenillerød A)
+124 - Ponceau 4R (Cochenillerød A)
+127 - Erythrosin (FD&C Red no 3)
+127 - Erythrosin (FD&C Red no 3)
+128 - Red 2G (Ext.D&C Red no 11)
+128 - Red 2G (Ext.D&C Red no 11)
+129 - Allura Red AC (Food Red 17, FD&C Red no 40)
+129 - Allura Red AC (Food Red 17, FD&C Red no 40)
+131 - Patent Blue V (Patentblåt)
+131 - Patent Blue V (Patentblåt)
+132 - Indigotin (Indigocarmin, FD&C Blue no 2)
+132 - Indigotin (Indigocarmin, FD&C Blue no 2)
+133 - Brilliant Blue FCF (FD&C Blue no 1)
+133 - Brilliant Blue FCF (FD&C Blue no 1)
+140 - Chlorophyll
+140 - Chlorophyll
+140 - Chlorophylliner
+1404 - Oxideret stivelse
+1404 - Oxideret stivelse
+141 - Chlorophyllin-kobber-kompleks
+141 - Chlorophyll-kobber-kompleks
+141 - Chlorophyll-kobber-kompleks
+1410 - Monostivelsephosphat
+1410 - Monostivelsephosphat
+1412 - Distivelsephosphat
+1412 - Distivelsephosphat
+1413 - Phosphateret distivelsephosphat
+1413 - Phosphateret distivelsephosphat
+1414 - Acetyleret distivelsephosphat
+1414 - Acetyleret distivelsephosphat
+142 - Green S (Food Green S)
+142 - Green S (Food Green S)
+1420 - Acetyleret stivelse
+1420 - Acetyleret stivelse
+1422 - Acetyleret distivelseadipat
+1422 - Acetyleret distivelseadipat
+1440 - Hydroxypropylstivelse
+1440 - Hydroxypropylstivelse
+1442 - Hydroxypropyldistivelsephosphat
+1442 - Hydroxypropyldistivelsephosphat
+1450 - Stivelsenatriumoctenylsuccinat
+1450 - Stivelsenatriumoctenylsuccinat
+1451 - Acetyleret oxideret stivelse
+1451 - Acetyleret oxideret stivelse
+1505 - Triethylcitrat
+1505 - Triethylcitrat
+150a - Karamel
+150a - Karamel
+150b - Kaustisk sulfiteret karamel
+150b - Kaustisk sulfiteret karamel
+150c - Ammonieret karamel (kulør)
+150c - Ammonieret karamel (kulør)
+150d - Ammonieret sulfiteret karamel
+150d - Ammonieret sulfiteret karamel
+151 - Black PN (Brilliant Black BN)
+151 - Black PN (Brilliant Black BN)
+1517 - Glyceryldiacetat (Diacetin)
+1517 - Glyceryldiacetat (Diacetin)
+1518 - Glyceryltriacetat (Triacetin)
+1518 - Glyceryltriacetat (Triacetin)
+1519 - Benzylalcohol
+1519 - Benzylalcohol
+1520 - Propylenglycol (Propan-1,2-diol)
+1520 - Propylenglycol (Propan-1,2-diol)
+1521 - Polyethylenglycol 6000 (PEG 6000)
+1521 - Polyethylenglycol 6000 (PEG 6000)
+153 - Vegetabilsk kul (Carbo medicinalis vegetabilis, Aktivt kul)
+153 - Vegetabilsk kul (Carbo medicinalis vegetabilis, Aktivt kul)
+154 - Brown FK (Brown For Kippers, Chocolate Brown FK)
+154 - Brown FK (Brown For Kippers, Chocolate Brown FK)
+155 - Brown HT (Chocolate Brown HT)
+155 - Brown HT (Chocolate Brown HT)
+160 - Carotenoider
+160 - Carotenoider
+160a - Blandede carotener og ß-caroten (Beta-caroten, Gulerodsfarve)
+160a - Blandede carotener og ß-caroten (Beta-caroten, Gulerodsfarve)
+160b - Annattoekstrakter (Bixin, Norbixin)
+160b - Annattoekstrakter (Bixin, Norbixin)
+160c - Paprikaekstrakt (Capsanthin, Capsorubin)
+160c - Paprikaekstrakt (Capsanthin, Capsorubin)
+160d - Lycopen
+160d - Lycopen
+160e - ß-Apo-8’-carotenal (C30)
+160e - ß-Apo-8’-carotenal (C30)
+160f - ß-Apo-8’-carotensyre (C30) ethylester
+160f - ß-Apo-8’-carotensyre (C30) ethylester
+161 - Xanthophyller
+161 - Xanthophyller
+161b - Lutein
+161b - Lutein
+161g - Canthaxanthin
+161g - Canthaxanthin
+162 - Rødbedefarve (Betaniner)
+162 - Rødbedefarve (Betaniner)
+163 - Anthocyaniner (Drueskalsfarve)
+163 - Anthocyaniner (Drueskalsfarve)
+170 - Calciumcarbonat (Kridt)
+170 - Calciumcarbonat (Kridt)
+171 - Titandioxid
+171 - Titandioxid
+172 - Jernoxider og jernhydroxider (Okker, Rust)
+172 - Jernoxider og jernhydroxider (Okker, Rust)
+173 - Aluminium
+173 - Aluminium
+174 - Sølv
+174 - Sølv
+175 - Guld
+175 - Guld
+180 - Rubinpigment BK (Litholrubin BK)
+180 - Rubinpigment BK (Litholrubin BK)
+200 - Sorbinsyre
+200 - Sorbinsyre
+202 - Kaliumsorbat
+202 - Kaliumsorbat
+203 - Calciumsorbat
+203 - Calciumsorbat
+210 - Benzoesyre
+210 - Benzoesyre
+211 - Natriumbenzoat (Atamon®)
+211 - Natriumbenzoat (Atamon®)
+212 - Kaliumbenzoat
+212 - Kaliumbenzoat
+213 - Calciumbenzoat
+213 - Calciumbenzoat
+214 - Ethyl-p-hydroxybenzoat (Ethylparaben)
+214 - Ethyl-p-hydroxybenzoat (Ethylparaben)
+215 - Ethyl-p-hydroxybenzoat, natriumsalt
+215 - Ethyl-p-hydroxybenzoat, natriumsalt
+216 - Propyl-p-hydroxybenzoat (Propylparaben)
+216 - Propyl-p-hydroxybenzoat (Propylparaben)
+217 - Propyl-p-hydroxybenzoat, natriumsalt
+217 - Propyl-p-hydroxybenzoat, natriumsalt
+218 - Methyl-p-hydroxybenzoat (Methylparaben)
+218 - Methyl-p-hydroxybenzoat (Methylparaben)
+219 - Methyl-p-hydroxybenzoat, natriumsalt
+219 - Methyl-p-hydroxybenzoat, natriumsalt
+220 - Svovldioxid
+220 - Svovldioxid
+221 - Natriumsulfit
+221 - Natriumsulfit
+222 - Natriumhydrogensulfit
+222 - Natriumhydrogensulfit
+223 - Natriumdisulfit
+223 - Natriumdisulfit
+224 - Kaliumdisulfit
+224 - Kaliumdisulfit
+226 - Calciumsulfit
+226 - Calciumsulfit
+227 - Calciumhydrogensulfit
+227 - Calciumhydrogensulfit
+228 - Kaliumhydrogensulfit
+228 - Kaliumhydrogensulfit
+234 - Nisin
+234 - Nisin
+235 - Natamycin (Pimaricin)
+235 - Natamycin (Pimaricin)
+239 - Hexamethylentetramin (»Hexa«)
+239 - Hexamethylentetramin (»Hexa«)
+242 - Dimethyldicarbonat (DMDC)
+242 - Dimethyldicarbonat (DMDC)
+249 - Kaliumnitrit
+249 - Kaliumnitrit
+250 - Natriumnitrit
+250 - Natriumnitrit
+251 - Natriumnitrat
+251 - Natriumnitrat
+252 - Kaliumnitrat (Salpeter)
+252 - Kaliumnitrat (Salpeter)
+260 - Eddikesyre
+260 - Eddikesyre
+261 - Kaliumacetat
+261 - Kaliumacetat
+262 - Natriumacetat
+262 - Natriumacetat
+262 - Natriumdiacetat
+263 - Calciumacetat
+263 - Calciumacetat
+270 - Mælkesyre
+270 - Mælkesyre
+280 - Propionsyre
+280 - Propionsyre
+281 - Natriumpropionat
+281 - Natriumpropionat
+282 - Calciumpropionat
+282 - Calciumpropionat
+283 - Kaliumpropionat
+283 - Kaliumpropionat
+284 - Borsyre
+284 - Borsyre
+285 - Natriumtetraborat (Boraks)
+285 - Natriumtetraborat (Boraks)
+290 - Carbondioxid (Kuldioxid, Kulsyre, Kultveilte, CO2)
+290 - Carbondioxid (Kuldioxid, Kulsyre, Kultveilte, CO2)
+296 - Æblesyre
+296 - Æblesyre
+297 - Fumarsyre
+297 - Fumarsyre
+300 - Ascorbinsyre (Vitamin C)
+300 - Ascorbinsyre (Vitamin C)
+301 - Natriumascorbat
+301 - Natriumascorbat
+302 - Calciumascorbat
+302 - Calciumascorbat
+304 - Ascorbylpalmitat
+304 - Ascorbylpalmitat
+304 - Ascorbylstearat
+306 - Tocopherolrig ekstrakt (Vitamin E)
+306 - Tocopherolrig ekstrakt (Vitamin E)
+307 - a-Tocopherol (alpha-tocopherol)
+307 - a-Tocopherol (alpha-tocopherol)
+308 - g-Tocopherol (gamma-tocopherol)
+308 - g-Tocopherol (gamma-tocopherol)
+309 - d-Tocopherol (delta-tocopherol)
+309 - d-Tocopherol (delta-tocopherol)
+310 - Propylgallat
+310 - Propylgallat
+311 - Octylgallat
+311 - Octylgallat
+312 - Dodecylgallat
+312 - Dodecylgallat
+315 - Erythorbinsyre (Isoascorbinsyre)
+315 - Erythorbinsyre (Isoascorbinsyre)
+316 - Natriumerythorbat (Natriumisoascorbat)
+316 - Natriumerythorbat (Natriumisoascorbat)
+320 - Butylhydroxyanisol (BHA)
+320 - Butylhydroxyanisol (BHA)
+321 - Butylhydroxytoluen (BHT)
+321 - Butylhydroxytoluen (BHT)
+322 - Lecithin
+322 - Lecithin
+325 - Natriumlactat
+325 - Natriumlactat
+326 - Kaliumlactat
+326 - Kaliumlactat
+327 - Calciumlactat
+327 - Calciumlactat
+330 - Citronsyre
+330 - Citronsyre
+331 - Dinatriumcitrat
+331 - Mononatriumcitrat
+331 - Mononatriumcitrat
+331 - Trinatriumcitrat
+332 - Monokaliumcitrat
+332 - Monokaliumcitrat
+332 - Trikaliumcitrat
+333 - Dicalciumcitrat
+333 - Monocalciumcitrat
+333 - Monocalciumcitrat
+333 - Tricalciumcitrat
+334 - Vinsyre
+334 - Vinsyre
+335 - Dinatriumtartrat
+335 - Mononatriumtartrat
+335 - Mononatriumtartrat
+336 - Dikaliumtartrat
+336 - Monokaliumtartrat
+336 - Monokaliumtartrat
+337 - Natriumkaliumtartrat
+337 - Natriumkaliumtartrat
+338 - Phosphorsyre
+338 - Phosphorsyre
+339 - Dinatriumphosphat
+339 - Mononatriumphosphat
+339 - Mononatriumphosphat
+339 - Trinatriumphosphat
+340 - Dikaliumphosphat
+340 - Monokaliumphosphat
+340 - Monokaliumphosphat
+340 - Trikaliumphosphat
+341 - Dicalciumphosphat
+341 - Monocalciumphosphat
+341 - Monocalciumphosphat
+341 - Tricalciumphosphat
+350 - Natriumhydrogenmalat
+350 - Natriummalat
+350 - Natriummalat
+351 - Kaliummalat
+351 - Kaliummalat
+352 - Calciumhydrogenmalat
+352 - Calciummalat
+352 - Calciummalat
+353 - Metavinsyre
+353 - Metavinsyre
+354 - Calciumtartrat Se stofferne E 334 – E 337
+354 - Calciumtartrat Se stofferne E 334 – E 337
+355 - Adipinsyre
+355 - Adipinsyre
+356 - Natriumadipat
+356 - Natriumadipat
+357 - Kaliumadipat
+357 - Kaliumadipat
+363 - Ravsyre
+363 - Ravsyre
+380 - Triammoniumcitrat Se stofferne E 330 – E 333
+380 - Triammoniumcitrat Se stofferne E 330 – E 333
+385 - Calciumdinatriumethylendiamintetra-acetat (Calciumdinatrium-EDTA)
+385 - Calciumdinatriumethylendiamintetra-acetat (Calciumdinatrium-EDTA)
+400 - Alginsyre
+400 - Alginsyre
+401 - Natriumalginat
+401 - Natriumalginat
+402 - Kaliumalginat
+402 - Kaliumalginat
+403 - Ammoniumalginat
+403 - Ammoniumalginat
+404 - Calciumalginat
+404 - Calciumalginat
+405 - Propylenglycolalginat
+405 - Propylenglycolalginat
+406 - Agar
+406 - Agar
+407 - Carrageenan
+407 - Carrageenan
+407a - Forarbejdet Eucheuma-tang (PES)
+407a - Forarbejdet Eucheuma-tang (PES)
+410 - Johannesbrødkernemel
+410 - Johannesbrødkernemel
+412 - Guargummi
+412 - Guargummi
+413 - Traganth
+413 - Traganth
+414 - Arabisk gummi (Akaciegummi)
+414 - Arabisk gummi (Akaciegummi)
+415 - Xanthangummi
+415 - Xanthangummi
+416 - Karayagummi
+416 - Karayagummi
+417 - Taragummi
+417 - Taragummi
+418 - Gellangummi
+418 - Gellangummi
+420 - Sorbitol/Sorbitolsirup
+420 - Sorbitol/Sorbitolsirup
+421 - Mannitol
+421 - Mannitol
+422 - Glycerol
+422 - Glycerol
+425 - Konjac
+425 - Konjac
+425 - Konjacglucomannan
+425 - Konjacgummi
+431 - Polyoxyethylen(40)stearat
+431 - Polyoxyethylen(40)stearat
+432 - Polyoxyethylen(20)sorbitanmonolaurat (Polysorbat 20)
+432 - Polyoxyethylen(20)sorbitanmonolaurat (Polysorbat 20)
+433 - Polyoxyethylen(20)sorbitanmonooleat (Polysorbat 80)
+433 - Polyoxyethylen(20)sorbitanmonooleat (Polysorbat 80)
+434 - Polyoxyethylen(20)sorbitanmonopalmitat (Polysorbat 40)
+434 - Polyoxyethylen(20)sorbitanmonopalmitat (Polysorbat 40)
+435 - Polyoxyethylen(20)sorbitanmonostearat (Polysorbat 60)
+435 - Polyoxyethylen(20)sorbitanmonostearat (Polysorbat 60)
+436 - Polyoxyethylen(20)sorbitantristearat (Polysorbat 65)
+436 - Polyoxyethylen(20)sorbitantristearat (Polysorbat 65)
+440 - Amideret pectin
+440 - Pectin
+440 - Pectin
+442 - Ammoniumphosphatider
+442 - Ammoniumphosphatider
+444 - Saccharoseacetatisobutyrat (SAIB)
+444 - Saccharoseacetatisobutyrat (SAIB)
+445 - Glycerolestere af fyrreharpiks
+445 - Glycerolestere af fyrreharpiks
+450 - Dicalciumdiphosphat
+450 - Dikaliumdiphosphat
+450 - Dinatriumdiphosphat
+450 - Dinatriumdiphosphat
+450 - Monocalciumdiphosphat
+450 - Tetrakaliumdiphosphat
+450 - Tetranatriumdiphosphat
+450 - Trinatriumdiphosphat
+451 - Pentakaliumtriphosphat
+451 - Pentanatriumtriphosphat
+451 - Pentanatriumtriphosphat
+452 - Calciumpolyphosphater
+452 - Kaliumpolyphosphater
+452 - Natriumcalciumpolyphosphater
+452 - Natriumpolyphosphater
+452 - Natriumpolyphosphater
+459 - Beta-cyclodextrin
+459 - Beta-cyclodextrin
+460 - Cellulosepulver
+460 - Mikrokrystallinsk cellulose
+460 - Mikrokrystallinsk cellulose
+461 - Methylcellulose
+461 - Methylcellulose
+462 - Ethylcellulose
+462 - Ethylcellulose
+463 - Hydroxypropylcellulose
+463 - Hydroxypropylcellulose
+464 - Hydroxypropylmethylcellulose
+464 - Hydroxypropylmethylcellulose
+465 - Methylethylcellulose
+465 - Methylethylcellulose
+466 - Natriumcarboxymethylcellulose (Carboxymethylcellulose (CMC), Cellulosegummi)
+466 - Natriumcarboxymethylcellulose (Carboxymethylcellulose (CMC), Cellulosegummi)
+468 - Tværbunden natriumcarboxymethyl-cellulose (Tværbunden cellulosegummi)
+468 - Tværbunden natriumcarboxymethyl-cellulose (Tværbunden cellulosegummi)
+469 - Enzymatisk hydrolyseret carboxymethyl-cellulose (Enzymatisk hydrolyseret cellulosegummi)
+469 - Enzymatisk hydrolyseret carboxymethyl-cellulose (Enzymatisk hydrolyseret cellulosegummi)
+470a - Natrium-, kalium- og calciumsalte af fedtsyrer
+470a - Natrium-, kalium- og calciumsalte af fedtsyrer
+470b - Magnesiumsalte af fedtsyrer
+470b - Magnesiumsalte af fedtsyrer
+471 - Mono- og diglycerider af fedtsyrer
+471 - Mono- og diglycerider af fedtsyrer
+472a - Eddikesyreestere af mono- og diglycerider af fedtsyrer
+472a - Eddikesyreestere af mono- og diglycerider af fedtsyrer
+472b - Mælkesyreestere af mono- og diglycerider af fedtsyrer
+472b - Mælkesyreestere af mono- og diglycerider af fedtsyrer
+472c - Citronsyreestere af mono- og diglycerider af fedtsyrer
+472c - Citronsyreestere af mono- og diglycerider af fedtsyrer
+472d - Vinsyreestere af mono- og diglycerider af fedtsyrer
+472d - Vinsyreestere af mono- og diglycerider af fedtsyrer
+472e - Mono- og diacetylvinsyreestere af mono- og diglycerider af fedtsyrer
+472e - Mono- og diacetylvinsyreestere af mono- og diglycerider af fedtsyrer
+472f - Blandede eddike- og vinsyreestere af mono- og diglycerider af fedtsyrer
+472f - Blandede eddike- og vinsyreestere af mono- og diglycerider af fedtsyrer
+473 - Saccharoseestere af fedtsyrer
+473 - Saccharoseestere af fedtsyrer
+474 - Saccharoseestere i blanding med mono- og diglycerider af fedtsyrer
+474 - Saccharoseestere i blanding med mono- og diglycerider af fedtsyrer
+475 - Polyglycerolestere af fedtsyrer
+475 - Polyglycerolestere af fedtsyrer
+476 - Polyglycerolpolyricinoleat
+476 - Polyglycerolpolyricinoleat
+477 - Propylenglycolestere af fedtsyrer
+477 - Propylenglycolestere af fedtsyrer
+479b - Termisk oxideret sojaolie omsat med mono- og diglycerider af fedtsyrer
+479b - Termisk oxideret sojaolie omsat med mono- og diglycerider af fedtsyrer
+481 - Natriumstearoyllactylat
+481 - Natriumstearoyllactylat
+482 - Calciumstearoyllactylat
+482 - Calciumstearoyllactylat
+483 - Stearyltartrat
+483 - Stearyltartrat
+491 - Sorbitanmonostearat (SPAN 60)
+491 - Sorbitanmonostearat (SPAN 60)
+492 - Sorbitantristearat (SPAN 65)
+492 - Sorbitantristearat (SPAN 65)
+493 - Sorbitanmonolaurat (SPAN 20)
+493 - Sorbitanmonolaurat (SPAN 20)
+494 - Sorbitanmonooleat (SPAN 80)
+494 - Sorbitanmonooleat (SPAN 80)
+495 - Sorbitanmonopalmitat (SPAN 40)
+495 - Sorbitanmonopalmitat (SPAN 40)
+500 - Natriumcarbonat (Soda)
+500 - Natriumcarbonat (Soda)
+500 - Natriumhydrogencarbonat (Natron, Tvekulsurt natron)
+500 - Natriumsesquicarbonat
+501 - Kaliumcarbonat (Potaske)
+501 - Kaliumcarbonat (Potaske)
+501 - Kaliumhydrogencarbonat
+503 - Ammoniumcarbonat (Hjortetaksalt)
+503 - Ammoniumcarbonat (Hjortetaksalt)
+503 - Ammoniumhydrogencarbonat
+504 - Magnesiumcarbonat
+504 - Magnesiumcarbonat
+504 - Magnesiumhydroxidcarbonat (Magnesiumhydrogencarbonat)
+507 - Saltsyre (Chlorbrinte)
+507 - Saltsyre (Chlorbrinte)
+508 - Kaliumchlorid
+508 - Kaliumchlorid
+509 - Calciumchlorid
+509 - Calciumchlorid
+510 - Ammoniumchlorid (»Salmiak«)
+510 - Ammoniumchlorid (»Salmiak«)
+511 - Magnesiumchlorid
+511 - Magnesiumchlorid
+512 - Stannochlorid (Tinchlorid)
+512 - Stannochlorid (Tinchlorid)
+513 - Svovlsyre
+513 - Svovlsyre
+514 - Natriumhydrogensulfat
+514 - Natriumsulfat (Glaubersalt)
+514 - Natriumsulfat (Glaubersalt)
+515 - Kaliumhydrogensulfat
+515 - Kaliumsulfat
+515 - Kaliumsulfat
+516 - Calciumsulfat (Gips)
+516 - Calciumsulfat (Gips)
+517 - Ammoniumsulfat
+517 - Ammoniumsulfat
+518 - Magnesiumsulfat.
+518 - Magnesiumsulfat.
+519 - Kobbersulfat.
+519 - Kobbersulfat.
+520 - Aluminiumsulfat
+520 - Aluminiumsulfat
+521 - Aluminiumnatriumsulfat
+521 - Aluminiumnatriumsulfat
+522 - Aluminiumkaliumsulfat
+522 - Aluminiumkaliumsulfat
+523 - Aluminiumammoniumsulfat
+523 - Aluminiumammoniumsulfat
+524 - Natriumhydroxid (Kaustisk soda, Ætsnatron)
+524 - Natriumhydroxid (Kaustisk soda, Ætsnatron)
+525 - Kaliumhydroxid (Ætskali)
+525 - Kaliumhydroxid (Ætskali)
+526 - Calciumhydroxid (Læsket kalk)
+526 - Calciumhydroxid (Læsket kalk)
+527 - Ammoniumhydroxid (Salmiakspiritus)
+527 - Ammoniumhydroxid (Salmiakspiritus)
+528 - Magnesiumhydroxid
+528 - Magnesiumhydroxid
+529 - Calciumoxid
+529 - Calciumoxid
+530 - Magnesiumoxid (Brændt magnesia)
+530 - Magnesiumoxid (Brændt magnesia)
+535 - Natriumferrocyanid
+535 - Natriumferrocyanid
+536 - Kaliumferrocyanid
+536 - Kaliumferrocyanid
+538 - Calciumferrocyanid
+538 - Calciumferrocyanid
+541 - Natriumaluminiumphosphat, surt
+541 - Natriumaluminiumphosphat, surt
+551 - Siliciumdioxid (»Kiselsyre«)
+551 - Siliciumdioxid (»Kiselsyre«)
+552 - Calciumsilikat
+552 - Calciumsilikat
+553a - Magnesiumsilikat
+553a - Magnesiumsilikat
+553a - Magnesiumtrisilikat
+553b - Talkum
+553b - Talkum
+554 - Natriumaluminiumsilikat
+554 - Natriumaluminiumsilikat
+555 - Kaliumaluminiumsilikat
+555 - Kaliumaluminiumsilikat
+556 - Calciumaluminiumsilikat
+556 - Calciumaluminiumsilikat
+558 - Bentonit
+558 - Bentonit
+559 - Aluminiumsilikat (Kaolin)
+559 - Aluminiumsilikat (Kaolin)
+570 - Fedtsyrer
+570 - Fedtsyrer
+574 - Gluconsyre
+574 - Gluconsyre
+575 - Glucono-d-lacton (Glucono-delta-lacton)
+575 - Glucono-d-lacton (Glucono-delta-lacton)
+576 - Natriumgluconat
+576 - Natriumgluconat
+577 - Kaliumgluconat
+577 - Kaliumgluconat
+578 - Calciumgluconat
+578 - Calciumgluconat
+579 - Ferrogluconat
+579 - Ferrogluconat
+585 - Ferrolactat
+585 - Ferrolactat
+586 - 4-Hexylresorcinol
+586 - 4-Hexylresorcinol
+620 - Glutaminsyre
+620 - Glutaminsyre
+621 - Mononatriumglutamat (MSG)
+621 - Mononatriumglutamat (MSG)
+622 - Monokaliumglutamat
+622 - Monokaliumglutamat
+623 - Calciumdiglutamat
+623 - Calciumdiglutamat
+624 - Monoammoniumglutamat
+624 - Monoammoniumglutamat
+625 - Magnesiumdiglutamat
+625 - Magnesiumdiglutamat
+626 - Guanylsyre
+626 - Guanylsyre
+627 - Dinatriumguanylat
+627 - Dinatriumguanylat
+628 - Dikaliumguanylat
+628 - Dikaliumguanylat
+629 - Calciumguanylat
+629 - Calciumguanylat
+630 - Inosinsyre
+630 - Inosinsyre
+631 - Dinatriuminosinat
+631 - Dinatriuminosinat
+632 - Dikaliuminosinat
+632 - Dikaliuminosinat
+633 - Calciuminosinat
+633 - Calciuminosinat
+634 - Calcium-5’-ribonucleotider
+634 - Calcium-5’-ribonucleotider
+635 - Dinatrium-5’-ribonucleotider
+635 - Dinatrium-5’-ribonucleotider
+636 - Maltol
+636 - Maltol
+637 - Ethylmaltol
+637 - Ethylmaltol
+640 - Glycin
+640 - Glycin
+640 - Natriumglycinat
+650 - Zinkacetat
+650 - Zinkacetat
+900 - Dimethylpolysiloxan
+900 - Dimethylpolysiloxan
+901 - Bivoks, hvidt og gult
+901 - Bivoks, hvidt og gult
+902 - Candelillavoks
+902 - Candelillavoks
+903 - Carnaubavoks
+903 - Carnaubavoks
+904 - Shellak (Schellak, Skællak)
+904 - Shellak (Schellak, Skællak)
+905 - Mikrokrystallinsk voks (Paraffinvoks)
+905 - Mikrokrystallinsk voks (Paraffinvoks)
+905 - Paraffinolie
+907 - Hydrogeneret poly-1-decen
+907 - Hydrogeneret poly-1-decen
+912 - Montansyreester
+912 - Montansyreester
+914 - Oxideret polyethylenvoks
+914 - Oxideret polyethylenvoks
+920 - L-Cystein
+920 - L-Cystein
+927b - Carbamid (Urinstof)
+927b - Carbamid (Urinstof)
+938 - Argon
+938 - Argon
+939 - Helium
+939 - Helium
+941 - Nitrogen (Kvælstof)
+941 - Nitrogen (Kvælstof)
+942 - Dinitrogenoxid (Kvælstofforilte, Lattergas, N2O)
+942 - Dinitrogenoxid (Kvælstofforilte, Lattergas, N2O)
+943a - Butan
+943a - Butan
+943b - Isobutan
+943b - Isobutan
+944 - Propan
+944 - Propan
+948 - Oxygen (Ilt)
+948 - Oxygen (Ilt)
+949 - Hydrogen (brint)
+949 - Hydrogen (brint)
+950 - Acesulfamkalium (Sunett®)
+950 - Acesulfamkalium (Sunett®)
+951 - Aspartam (NutraSweet®; Canderel®)
+951 - Aspartam (NutraSweet®; Canderel®)
+952 - Calciumcyclamat
+952 - Cyclaminsyre
+952 - Cyclaminsyre
+952 - Natriumcyclamat
+953 - Isomalt
+953 - Isomalt
+954 - Calciumsaccharin
+954 - Kaliumsaccharin
+954 - Natriumsaccharin
+954 - Saccharin
+954 - Saccharin
+955 - Sucralose
+955 - Sucralose
+957 - Thaumatin
+957 - Thaumatin
+959 - Neohesperidindihydrochalcon
+959 - Neohesperidindihydrochalcon
+962 - Aspartam-acesulfamsalt
+962 - Aspartam-acesulfamsalt
+965 - Maltitol
+965 - Maltitol
+965 - Maltitolsirup
+966 - Lactitol
+966 - Lactitol
+967 - Xylitol
+967 - Xylitol
+968 - Erythritol
+968 - Erythritol
+999 - Quillaiaekstrakt
+999 - Quillaiaekstrakt 

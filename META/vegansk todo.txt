@@ -1,0 +1,56 @@
+http://90.184.159.187:60153/admin/ < burde virke men det gør det ikke, selvom jeg burde ha' åbnet porten og bruger python manage.py runserver 127.0.0.1:60153
+ah! 127.0.0.1 er ikke tilgængelig for andre end mig selv. Prøv: at kør serveren på 10.0.0.129 i stedet.
+
+Todo:
+
+Store:
+
+> Få views og templates til at virke. Sider:
+	> For
+	> Produkt
+	> Firma
+	> Producent
+	> Meta/Om
+	> Ingrediens
+	> Eksternt tilgængelig tilføjelsesformular. Kan vel kopieres-agtigt på en eller anden måde fra admins måde at gøre det på?
+
+> Lav designet, herunder eks. en variabel css der giver en lys grøn baggrund til verificerede veganske produkter og en lys rød baggrund til verificerede ikke-veganske produkter.
+
+> Find og køb hosting/vps og dns og sæt django osv. op, med den rigtige server i stedet for django development. Apache? nginx?
+https://code.djangoproject.com/wiki/DjangoFriendlyWebHosts
+https://docs.djangoproject.com/en/1.3/howto/deployment/
+
+> Få søgning udadtil til at virke. / database queries.
+django book anbefaler at søge efter "open-source full-text search":
+http://en.wikipedia.org/wiki/Full_text_search
+http://openfts.sourceforge.net/
+http://www.sqlite.org/fts3.html
+
+> Få filuploading til at virke ifbm. at uploade billeder af produkterne til siden.
+https://docs.djangoproject.com/en/1.3/topics/http/file-uploads/
+
+Måske bør siden inkludere en tilsætningsstofliste, som siden automatisk krydstjekker med ingredienserne, og selv skriver de garanteret animalske med rød, de potentielt ani med orange evt. og de veganske med sort eller grøn. Siden lister så automatisk de pot. veg. på en liste under, hvor man så kan vælge kilden dertil. Evt. lister den også de ikke-animalske ved siden af OGSÅ, så man hurtigt kan få et overblik, og kopiere den et sted hen, fx. til en e-mail.
+
+Små:
+
+> Få urls.py til at virke. Man skal kunne finde et produkt både via vegansk.dk/kellogs/frosties men også via et UUID: vegansk.dk/259. 
+Måske man også bør kunne finde et produkt kategoriseret i et indeks, som eks. vegansk.dk/kolonial/morgenmadsprodukter/kelloggs/frosties? (en underkategori af firma er nok stadig nødvendig, da der eks. er flere mærker af müsli, hvoraf nogle er veganske og andre ikke er. Hvad der i denne forbindelse også kunne være smart, ville være hvis man også kunne gå ind under /kolonial/ alene, og så få et indeks over yderligere underkategorier i kolonialvarer, indtil man når ned til nederste underkategori, hvor alle matchende produkter listes.
+
+> Lav en e-mail-sender direkte fra siden, så man kan kontakte et firma angående om en ingrediens er vegansk.
+https://docs.djangoproject.com/en/1.3/topics/email/
+
+> Lav separat kategori eller lign. til produkter, der kan være dyretestede.
+
+Mht. siderne ved produktnavnene tænker jeg at jeg for det første skal lave en form for translation table der oversætter mellemrum med eks. underscores og
+danske bogstaver med ae, oo og aa og så indputte navnene. Hvis man så rammer plet, eks.: www.vegansk.dk/produkt/urtekram/riskager_med_chokolade laver den først et direkte query på navnet og derefter, hvis den ikke rammer, foretager den i stedet en søgning, med den modsatte translation tilbage ti
+
+Hvad den skal gøre ved et hit på /product/ er vel først at tjekke om det direkte er et eksisterende produkt, og ellers tage inputtet og lave en søgning på produkter med det.
+
+/produkt/ (søgning)
+/produkt/mærke (eksisterende ellers søgning)
+/mærke/ (eksisterende ellers søgning)
+/producent/ (eksisterende ellers søgning)
+/ingrediens/ (eksisterende ellers søgning)
+
+ 
+alternativ: vis alle? Måske skal den vise alle ved bare /producent/ (intet) og så hvis der er hvilket som helst symbol bagefter foretages en søgning?)

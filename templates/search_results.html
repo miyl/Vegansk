@@ -1,0 +1,12 @@
+<p>Du søgte efter: <strong>{{ query }}</strong></p>
+
+{% if products %}
+    <p>Fandt {{ products|length }} produkt{{ products|pluralize }}.</p>
+    <ul>
+        {% for product in products %}
+        <li><a href="../id/{{ product.id }}">{{ product.name }}</a></li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>Ingen produkter matchede dine søgekriterier.</p>
+{% endif %}

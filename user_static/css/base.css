@@ -1,0 +1,77 @@
+﻿@charset "utf-8";
+
+/* Just read a tip to organize CSS-properties alphabetically. Sounds like a good idea! I usually just try to somehow order them by order of significance to the design (like width and height first and grouped together), but this seems better. Except that width and height is separate-
+*/
+
+/*
+* {
+	border: 0px;
+	margin: 0px;
+	outline: 0px;
+	padding: 0px;
+}
+*/
+
+body {
+	margin: 25px;
+	/* background-color: #d9ffa7; */}
+
+a:hover {
+	color: black}
+
+a:link {
+	font-size: 20px;}
+
+p {
+	clear: left;
+    max-width: 700px;}
+
+#container {
+	height: 100%;
+	width: 100%;}
+
+#content {
+	clear: left;}
+
+#search_box {
+	margin-top: 5px;}
+
+.bold {
+    font-weight: bold;}
+
+.current_page {
+	color: #000;}
+
+.green {
+	color: rgb(126,176,62)}
+
+
+/* Navigation bar: */
+
+nav {
+	font-size: 25 px;
+	font-weight: bold;}
+
+	nav a {
+		color: rgb(48,130,52);
+		font-size: 25 px;
+		text-decoration: none;}
+
+	nav p {
+		font-size: 25 px;}
+   
+    nav ul {
+        margin: 0px;
+        padding: 0px;}
+
+	nav li {
+        margin: 0px;
+        padding: 0px;
+		list-style-type: none;
+		display: inline;
+		padding: 0px 15px 0px 0px;}
+
+/* Coloring products when linking to them */
+a.vegan { color: rgb(126,176,62); }
+a.potvegan { color: #ccc; }
+a.notvegan { color: #c00; }

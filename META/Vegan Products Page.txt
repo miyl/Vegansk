@@ -1,0 +1,31 @@
+Hvilke elementer skal der være per produkt?
+
+
+Drop down: (bedre ift. søgning)
+	* Producent
+	* Forretninger
+	
+Afkrydsningsbokse:
+	* Glutenfri
+	* Sojafri
+
+Tekstfelt:
+	* Ingredienser
+	* Infodato (datofelt)
+	* Kommentar-felt?*
+
+Billedboks:
+	* Produkt-billede
+
+
+* (hvad med andre politiske grund til boykot?) eks. "involveret i krigsførsel"? (/ anden undertrykkelse, vold)
+
+Måske en subside med links til info om producenten, som kunne være wikipedia eks., og producentens hjemmeside.
+Det kunne også være en lille hjemmelavet side med en kort, veganisme-relevant beskrivelse, eks. Om de tester på dyr eks.! Det er vel lidt fyld hvis det står på alle siderne, hvis man allerede ved det, og hurtigt bare skal tjekke et produkt.
+
+
+, Forretninger varen kan findes i, afkrydsningsbokse til glutenfri, sojafri, simpel ingrediensliste, ingrediensliste med mulighed for at skrive kilder til alt, billeder, producent kontaktet d., evt. producentens svar?, 
+
+
+Qs:
+Skal der kun være veganske ting? Eller skal der også være vegetariske? Hvad med allergier? Soja? Gluten? Måske vegansk + allergi-listing?

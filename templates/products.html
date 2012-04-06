@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block title %}Produkter{% endblock %}
+
+{% block head %}<link href="{{ STATIC_URL }}css/products.css" rel="stylesheet" type="text/css" />{% endblock %}
+
+{% block content %}
+
+<h1>Produkt: {{product.name }}</h1>
+
+<div id="left">
+<p><span class="type">Mærke:</span> {{ product.brands }}</p>
+<p><span class="type">Producent:</span> {{ product.manufacturers }}</p>
+<p><span class="type">Er produktet vegansk:</span> {{ product.get_vegan_display }}</p>
+<p class="list"><span class="type">Fås i:</span>
+  <ul> 
+    {% for store in product.stores.all %}
+    <li>{{ store }}, </li>
+    {% endfor %}
+  </ul>
+</p>
+
+<p class="list"><span class="type">
+  Ingredienser:</span></p>
+  <ul> 
+    {% for ing in product.ingredients.all %}
+    <li>{{ ing }}, </li>
+    {% endfor %}
+  </ul>
+
+<p><span class="type">Gluten:</span> {{ product.gluten }}</p>
+<p><span class="type">Soja:</span> {{ product.soy }}</p>
+<p><span class="type">Økologisk:</span> {{ product.bio }}</p>
+<p><span class="type">Fair Trade:</span> {{ product.fair_trade }}</p>
+</div>
+
+<div id="right">
+<p><span class="type">Billede:</span></p> 
+{% if product.picture %} 
+    <img src="{{ product.picture }}"></img>
+{% else %}
+    <p>Billede mangler.</p>
+{% endif %}
+</div>
+
+<a href="rediger">Rediger produkt</a>
+
+</div>
+
+
+{% endblock %}

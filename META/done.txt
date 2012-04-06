@@ -1,0 +1,4 @@
+x 2012-01-26 Make ids work with searching
+x 2012-01-26 Make ids work with models, views and urls
+x 2012-02-03 Make the Vegan choices verbose_name work, so it's properly displayed on the site
+x 2012-02-03 Remove the 'verified' field from the public formulae

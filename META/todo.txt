@@ -1,0 +1,14 @@
+(C) Make images work
+(A) Make a public formula for submitting new data, identical to the one in the admin except that it requires moderator approval. Make a place in the admin to approve this data
+(A) Improve search? Make it possible to search for products alone, or brands, or organic, and combine these criteria?
+(B) Add 'highlight current page in nav' feature
+(A) Make the 'ingredients' page
+(A) Make the 'store' page
+(A) Make the 'brand' page
+(C) Make the ingredients page be capable of showing only the alias field(s) if they're filled out
+(A) Make some intermediate way to store user submitted data, before it has been cleared with a moderator. Maybe a different place in the database, or maybe somehow simply stored in plaintext
+(A) Enable the formulae to be submitted
+(C) Make a commenting system for each item
+(B) Make a user system
+(D) Integrate "Links: Andre Dyrearters Følelser, Bevidsthed mm."-vegkon page as a small secondary feature with an "add" formula. Improve the organisation of the data in relation to the quantity there might turn out to be"
+(A) HTML and CSS work. Bootstrap?

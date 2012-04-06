@@ -1,0 +1,36 @@
+{% extends "form_item_base.html" %}
+
+{% block title %}Tilføj{% endblock %}
+
+{% block nav3 %}class="current_page"{% endblock %}
+
+{% block content %}
+
+<h1>Tilføj</h1>
+
+Hvad ønsker du at tilføje?:
+<a href="/tilfoej-product/">Et produkt</a>
+<a href="/tilfoej-maerke/">Et mærke</a>
+<a href="/tilfoej-forretning/">En forretning</a>
+<a href="/tilfoej-ingrediens/">Et pngrediens</a>
+
+<form action="/tilfoej/" method="post" > {% csrf_token %}
+Hvad ønsker du at tilføje?:    <select class="types" name="type">
+    <option value="product">Produkt</option>
+    <option value="brand">Mærke</option>
+    <option value="manufacturer">Producent</option>
+    <option value="product">Ingrediens</option>
+    {{ formset }}
+    <input type="submit" value="Tilføj" />
+</form>
+
+{% endblock %}
+
+
+<!--
+<div id="search-create">
+<div id="global-search">
+<form id="global-search-form" action="/palettes/search" method="get">
+<div class="label-overlay">
+<label for="global-search-query" id="global-search-query-label">Search palettes&hellip;</label><input type="text" name="query" id="global-search-query" />
+</div><div id="global-search-type"><a id="global-search-type-trigger" class="palette" href="#" onclick="return false;"><span class="icon"></span></a><div id="global-search-type-menu" class="dark-grey-menu align-left" style="display: none;"><div class="top"><div class="left"></div><div class="right"></div><div class="middle"></div></div><ul><li><div class="left"></div><div class="right"></div><a class="palette" href="#" data-action="/palettes/search" data-label="Search palettes&hellip;"><span class="icon"></span>Palettes<span class="pad-right"></span></a></li><li><div class="left"></div><div class="right"></div><a class="pattern" href="#" data-action="/patterns/search" data-label="Search patterns&hellip;"><span class="icon"></span>Patterns<span class="pad-right"></span></a></li><li><div class="left"></div><div class="right"></div><a class="pattern-template" href="#" data-action="/pattern/templates/search" data-label="Search pattern templates"><span class="icon"></span>Pattern Templates<span class="pad-right"></span></a></li><li><div class="left"></div><div class="right"></div><a class="shape" href="#" data-action="/shapes/search" data-label="Search shapes&hellip;"><span class="icon"></span>Shapes<span class="pad-right"></span></a></li><li><div class="left"></div><div class="right"></div><a class="color" href="#" data-action="/colors/search" data-label="Search colors&hellip;"><span class="icon"></span>Colors<span class="pad-right"></span></a></li><li><div class="left"></div><div class="right"></div><a class="lover" href="#" data-action="/lovers/search" data-label="Search lovers&hellip;"><span class="icon"></span>Lovers<span class="pad-right"></span></a></li></ul><div class="bottom"><div class="left"></div><div class="right"></div><div class="middle"></div></div></div></div><a href="#" id="global-search-submit" onclick="$('global-search-form').submit(); return false;">Search</a></form></div><div class="divider"></div><div id="global-create"><a id="global-create-trigger" href="#" onclick="return false;">Create</a><div id="global-create-menu" class="dark-grey-menu align-right" style="display: none;"><div class="top"><div class="left"></div><div class="right"></div><div class="middle"></div></div><ul><li><div class="left"></div><div class="right"></div><a class="palette" href="/palettes/add"><span class="icon"></span>Palette<span class="pad-right"></span></a></li><li><div class="left"></div><div class="right"></div><a class="pattern" href="/patterns/add"><span class="icon"></span>Pattern<span class="pad-right"></span></a></li><li><div class="left"></div><div class="right"></div><a class="pattern-template" href="/seamless"><span class="icon"></span>Pattern Template<span class="pad-right"></span></a></li><li><div class="left"></div><div class="right"></div><a class="shape" href="/seamless"><span class="icon"></span>Shape<span class="pad-right"></span></a></li><li><div class="left"></div><div class="right"></div><a class="color" href="/colors/add"><span class="icon"></span>Color<span class="pad-right"></span></a></li></ul><div class="bottom"><div class="left"></div><div class="right"></div><div class="middle"></div></div></div></div></div><ul class="nav"> -->

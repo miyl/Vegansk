@@ -1,0 +1,21 @@
+﻿@charset "utf-8";
+
+#content select {
+    display: block;}
+
+#content input {
+    display: block;
+    clear: both;}
+
+#content label {
+    display: block;
+    clear: both;}
+
+#content textarea {
+    display: block;
+    clear: both;}
+
+#content .types {
+    margin: 0px 10px 25px 0px;
+    padding: 0px;
+    display: inline;}

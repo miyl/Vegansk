@@ -1,0 +1,34 @@
+<!doctype html>
+
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Vegansk.dk: {% block title %}{% endblock %}</title>
+    <link href="{{ STATIC_URL }}css/base.css" rel="stylesheet" type="text/css" />
+    {% block head %}{% endblock %}
+  </head>
+
+  <body>
+	<div id="container">
+
+    <nav>
+	<ul>
+        <li><a {% block nav1 %}{% endblock %} href="/">Forside</a></li>
+        <li><a {% block nav2 %}{% endblock %} href="/produktliste/">Liste af produkter</a></li>
+        <li><a {% block nav3 %}{% endblock %} href="/tilfoej-product/">Tilføj</a></li>
+    </ul>	
+	
+    <div id="search_box">
+        <form action="/soeg/" method="get">
+        <input type="text" name="q">
+        <input type="submit" value="Søg">
+        </form>
+	</div>
+    </nav>
+    
+		<div id="content">
+		{% block content %}{% endblock %}
+		</div>
+	</div>
+  </body>
+</html>

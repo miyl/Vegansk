@@ -1,0 +1,9 @@
+to operate this simply do:
+t -d t
+and then the command, fx.
+t -d t ls OR
+t -d t help
+
+t actually already has a conf on my computer, but apparently this overwrites which one it uses, with multiple "-d"s.
+
+Made it work with a relative path by setting the configuration file to $PWD.

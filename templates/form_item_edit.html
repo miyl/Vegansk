@@ -1,0 +1,13 @@
+{% extends "form_item_base.html" %}
+
+{% block title %}Rediger: {{product_info.name }}{% endblock %}
+
+{% block content %}
+<h1>Rediger: {{ product_info.name }}</h1>
+
+<form action="" method="post">{% csrf_token %}
+    {{ formset }}
+    <input type="submit" value="Indsend" />
+</form>
+
+{% endblock %}
