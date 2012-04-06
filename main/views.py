@@ -2,9 +2,11 @@
 
 from django.shortcuts import render_to_response
 from django.http import HttpResponse
-from django.http import HttpRequest
+#from django.http import HttpRequest
 from django.template import RequestContext
-from vegansk.main.models import product, store, ingredient, manufacturer, brand
+
+# Models:
+from main.models import product, store, ingredient, manufacturer, brand
 from django.forms.models import modelformset_factory
 
 def index(request):

@@ -7,7 +7,8 @@ TEMPLATE_DEBUG = DEBUG
 import os
 import django
 DJANGO_ROOT = os.path.dirname(os.path.realpath(django.__file__))
-SITE_ROOT = os.path.dirname(__file__)
+SITE_ROOT_OLD = os.path.dirname(__file__)
+SITE_ROOT = os.path.join(SITE_ROOT_OLD, '../')
 
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),

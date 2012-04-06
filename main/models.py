@@ -1,15 +1,15 @@
 # coding=utf-8
-from django.db import models
+from django.db import models as m
 from django.forms import ModelForm
 
-class brand(models.Model):
-    name = models.CharField('Navn', max_length=25, unique=True)
-    home_page = models.URLField('Hjemmeside', max_length=25, blank=True, null=True)
-    email_address = models.EmailField('E-mail-adresse', blank=True, null=True)
-    description = models.TextField('Beskrivelse', blank=True, null=True)
-    only_vegan_products = models.BooleanField('Firmaet saelger udelukkende veganske produkter')
-    verified = models.BooleanField('Sæt hak i dette felt for at godkende informationerne')
-    last_updated = models.DateTimeField('Senest opdateret.', auto_now=True, editable=False)
+class brand(m.Model):
+    name = m.CharField('Navn', max_length=25, unique=True)
+    home_page = m.URLField('Hjemmeside', max_length=25, blank=True, null=True)
+    email_address = m.EmailField('E-mail-adresse', blank=True, null=True)
+    description = m.TextField('Beskrivelse', blank=True, null=True)
+    only_vegan_products = m.BooleanField('Firmaet saelger udelukkende veganske produkter')
+    verified = m.BooleanField('Sæt hak i dette felt for at godkende informationerne')
+    last_updated = m.DateTimeField('Senest opdateret.', auto_now=True, editable=False)
 
     def __unicode__(self):
         return self.name
@@ -18,14 +18,14 @@ class brand(models.Model):
         ordering = ['name']
 
 
-class manufacturer(models.Model):
-    name = models.CharField('Navn', max_length=25, unique=True)
-    home_page = models.URLField('Hjemmeside', max_length=25, blank=True, null=True)
-    email_address = models.EmailField('E-mail-adresse', blank=True, null=True)
-    description = models.TextField('Beskrivelse', blank=True, null=True)
-    only_vegan_products = models.BooleanField('Producenten fremstiller udelukkende veganske produkter.')
-    verified = models.BooleanField('Sæt hak i dette felt for at godkende informationerne')
-    last_updated = models.DateTimeField('Senest opdateret.', auto_now=True, editable=False)
+class manufacturer(m.Model):
+    name = m.CharField('Navn', max_length=25, unique=True)
+    home_page = m.URLField('Hjemmeside', max_length=25, blank=True, null=True)
+    email_address = m.EmailField('E-mail-adresse', blank=True, null=True)
+    description = m.TextField('Beskrivelse', blank=True, null=True)
+    only_vegan_products = m.BooleanField('Producenten fremstiller udelukkende veganske produkter.')
+    verified = m.BooleanField('Sæt hak i dette felt for at godkende informationerne')
+    last_updated = m.DateTimeField('Senest opdateret.', auto_now=True, editable=False)
 
     def __unicode__(self):
         return self.name
@@ -34,14 +34,14 @@ class manufacturer(models.Model):
         ordering = ['name']
 
 
-class store(models.Model):
-    name = models.CharField('Navn', max_length=25, unique=True)
-    home_page = models.URLField('Hjemmeside', max_length=25, blank=True, null=True)
-    email_address = models.EmailField('E-mail-adresse', blank=True, null=True)
-    description = models.TextField('Beskrivelse', blank=True, null=True)
-    only_vegan_products = models.BooleanField('Forretningen sælger udelukkende veganske produkter.')
-    verified = models.BooleanField('Sæt hak i dette felt for at godkende informationerne?')
-    last_updated = models.DateTimeField('Senest opdateret.', auto_now=True, editable=False)
+class store(m.Model):
+    name = m.CharField('Navn', max_length=25, unique=True)
+    home_page = m.URLField('Hjemmeside', max_length=25, blank=True, null=True)
+    email_address = m.EmailField('E-mail-adresse', blank=True, null=True)
+    description = m.TextField('Beskrivelse', blank=True, null=True)
+    only_vegan_products = m.BooleanField('Forretningen sælger udelukkende veganske produkter.')
+    verified = m.BooleanField('Sæt hak i dette felt for at godkende informationerne?')
+    last_updated = m.DateTimeField('Senest opdateret.', auto_now=True, editable=False)
 
     def __unicode__(self):
         return self.name
@@ -50,20 +50,20 @@ class store(models.Model):
         ordering = ['name']
 
 
-class ingredient(models.Model):
+class ingredient(m.Model):
     VEGAN_CHOICES = (
         ('V', 'Vegansk'),
         ('P', 'Potentielt vegansk'),
         ('I', 'Ikke vegansk'),
     )
-    vegan = models.CharField('Vegansk', max_length=1, choices=VEGAN_CHOICES)
-    name = models.CharField('Navn', max_length=35, unique=True)
-    alias1 = models.CharField('Alias 1', max_length=35, blank=True, null=True)
-    alias2 = models.CharField('Alias 2', max_length=35, blank=True, null=True)
-    alias3 = models.CharField('Alias 3', max_length=35, blank=True, null=True)
-    description = models.TextField('Beskrivelse', blank=True, null=True)
-    verified = models.BooleanField('Sæt hak i dette felt for at godkende informationerne')
-    last_updated = models.DateTimeField('Senest opdateret.', auto_now=True, editable=False)
+    vegan = m.CharField('Vegansk', max_length=1, choices=VEGAN_CHOICES)
+    name = m.CharField('Navn', max_length=35, unique=True)
+    alias1 = m.CharField('Alias 1', max_length=35, blank=True, null=True)
+    alias2 = m.CharField('Alias 2', max_length=35, blank=True, null=True)
+    alias3 = m.CharField('Alias 3', max_length=35, blank=True, null=True)
+    description = m.TextField('Beskrivelse', blank=True, null=True)
+    verified = m.BooleanField('Sæt hak i dette felt for at godkende informationerne')
+    last_updated = m.DateTimeField('Senest opdateret.', auto_now=True, editable=False)
 
 
     def __unicode__(self):
@@ -73,27 +73,27 @@ class ingredient(models.Model):
         ordering = ['name']
 
 
-class product(models.Model):
+class product(m.Model):
     VEGAN_CHOICES = (
         ('V', 'Vegansk'),
         ('P', 'Potentielt vegansk'),
         ('I', 'Ikke vegansk'),
     )
-    vegan = models.CharField('Vegansk', max_length=1, choices=VEGAN_CHOICES)
-    name = models.CharField('Navn', max_length=50)
-    brands = models.ForeignKey(brand, verbose_name='Mærke')
-    manufacturers = models.ForeignKey(manufacturer, verbose_name='Producent')
-    stores = models.ManyToManyField(store, verbose_name='Hvilke forretninger kan produktet fås i?')
-    ingredients = models.ManyToManyField(ingredient, verbose_name='Ingredienser')
-#    picture = models.ImageField(upload_to='user_static')
-    brand_manufacturer_contacted = models.TextField('Svar fra firmaet eller producenten bag ang. kilden til ingredienserne', blank=True, null=True)
-    bio = models.BooleanField('Økologisk')
-    fair_trade = models.BooleanField('Fair trade')
-    gluten = models.NullBooleanField('Indeholder gluten')
-    soy = models.NullBooleanField('Indeholder soja')
-    nuts = models.NullBooleanField('Indeholder nødder')
-    verified = models.BooleanField('Sæt hak i dette felt for at godkende informationerne')
-    last_updated = models.DateTimeField('Senest opdateret.', auto_now=True, editable=False)
+    vegan = m.CharField('Vegansk', max_length=1, choices=VEGAN_CHOICES)
+    name = m.CharField('Navn', max_length=50)
+    brands = m.ForeignKey(brand, verbose_name='Mærke')
+    manufacturers = m.ForeignKey(manufacturer, verbose_name='Producent')
+    stores = m.ManyToManyField(store, verbose_name='Hvilke forretninger kan produktet fås i?')
+    ingredients = m.ManyToManyField(ingredient, verbose_name='Ingredienser')
+#    picture = m.ImageField(upload_to='user_static')
+    brand_manufacturer_contacted = m.TextField('Svar fra firmaet eller producenten bag ang. kilden til ingredienserne', blank=True, null=True)
+    bio = m.BooleanField('Økologisk')
+    fair_trade = m.BooleanField('Fair trade')
+    gluten = m.NullBooleanField('Indeholder gluten')
+    soy = m.NullBooleanField('Indeholder soja')
+    nuts = m.NullBooleanField('Indeholder nødder')
+    verified = m.BooleanField('Sæt hak i dette felt for at godkende informationerne')
+    last_updated = m.DateTimeField('Senest opdateret.', auto_now=True, editable=False)
 
 
     def __unicode__(self):
