@@ -2,7 +2,7 @@
 from django.db import models as m
 from django.forms import ModelForm
 
-class brand(m.Model):
+class Brand(m.Model):
     name = m.CharField('Navn', max_length=25, unique=True)
     home_page = m.URLField('Hjemmeside', max_length=25, blank=True, null=True)
     email_address = m.EmailField('E-mail-adresse', blank=True, null=True)
@@ -18,7 +18,7 @@ class brand(m.Model):
         ordering = ['name']
 
 
-class manufacturer(m.Model):
+class Manufacturer(m.Model):
     name = m.CharField('Navn', max_length=25, unique=True)
     home_page = m.URLField('Hjemmeside', max_length=25, blank=True, null=True)
     email_address = m.EmailField('E-mail-adresse', blank=True, null=True)
@@ -34,23 +34,23 @@ class manufacturer(m.Model):
         ordering = ['name']
 
 
-class store(m.Model):
-    name = m.CharField('Navn', max_length=25, unique=True)
-    home_page = m.URLField('Hjemmeside', max_length=25, blank=True, null=True)
-    email_address = m.EmailField('E-mail-adresse', blank=True, null=True)
-    description = m.TextField('Beskrivelse', blank=True, null=True)
-    only_vegan_products = m.BooleanField('Forretningen sælger udelukkende veganske produkter.')
-    verified = m.BooleanField('Sæt hak i dette felt for at godkende informationerne?')
-    last_updated = m.DateTimeField('Senest opdateret.', auto_now=True, editable=False)
+class Store(m.Model): 
+	name = m.CharField('Navn', max_length=25, unique=True)
+	home_page = m.URLField('Hjemmeside', max_length=25, blank=True, null=True)
+	email_address = m.EmailField('E-mail-adresse', blank=True, null=True)
+	description = m.TextField('Beskrivelse', blank=True, null=True)
+	only_vegan_products = m.BooleanField('Forretningen sælger udelukkende veganske produkter.')
+	verified = m.BooleanField('Sæt hak i dette felt for at godkende informationerne?')
+	last_updated = m.DateTimeField('Senest opdateret.', auto_now=True, editable=False)
 
-    def __unicode__(self):
-        return self.name
+	def __unicode__(self):
+		return self.name
 
-    class Meta:
-        ordering = ['name']
+	class Meta:
+		ordering = ['name']
 
 
-class ingredient(m.Model):
+class Ingredient(m.Model):
     VEGAN_CHOICES = (
         ('V', 'Vegansk'),
         ('P', 'Potentielt vegansk'),
@@ -73,7 +73,7 @@ class ingredient(m.Model):
         ordering = ['name']
 
 
-class product(m.Model):
+class Product(m.Model):
     VEGAN_CHOICES = (
         ('V', 'Vegansk'),
         ('P', 'Potentielt vegansk'),
@@ -81,10 +81,10 @@ class product(m.Model):
     )
     vegan = m.CharField('Vegansk', max_length=1, choices=VEGAN_CHOICES)
     name = m.CharField('Navn', max_length=50)
-    brands = m.ForeignKey(brand, verbose_name='Mærke')
-    manufacturers = m.ForeignKey(manufacturer, verbose_name='Producent')
-    stores = m.ManyToManyField(store, verbose_name='Hvilke forretninger kan produktet fås i?')
-    ingredients = m.ManyToManyField(ingredient, verbose_name='Ingredienser')
+    brands = m.ForeignKey(Brand, verbose_name='Mærke')
+    manufacturers = m.ForeignKey(Manufacturer, verbose_name='Producent')
+    stores = m.ManyToManyField(Store, verbose_name='Hvilke forretninger kan produktet fås i?')
+    ingredients = m.ManyToManyField(Ingredient, verbose_name='Ingredienser')
 #    picture = m.ImageField(upload_to='user_static')
     brand_manufacturer_contacted = m.TextField('Svar fra firmaet eller producenten bag ang. kilden til ingredienserne', blank=True, null=True)
     bio = m.BooleanField('Økologisk')
@@ -124,20 +124,20 @@ class product(m.Model):
 
 class productForm(ModelForm):
     class Meta:
-        model = product
+        model = Product
 
 class brandForm(ModelForm):
     class Meta:
-        model = brand
+        model = Brand
 
 class manufacturerForm(ModelForm):
     class Meta:
-        model = manufacturer
+        model = Manufacturer
 
 class ingredientForm(ModelForm):
     class Meta:
-        model = ingredient
+        model = Ingredient
 
 class storeForm(ModelForm):
     class Meta:
-        model = store
+        model = Store

@@ -6,7 +6,7 @@ from django.http import HttpResponse
 from django.template import RequestContext
 
 # Models:
-from main.models import product, store, ingredient, manufacturer, brand
+from main.models import Product, Store, Ingredient, Manufacturer, Brand
 from django.forms.models import modelformset_factory
 
 def index(request):
@@ -15,14 +15,14 @@ def index(request):
 
 
 def product_page_by_id(request, product_id):
-    pro = product.objects.get(id=product_id)
+    pro = Product.objects.get(id=product_id)
     return render_to_response('products.html', 
     {'product': pro,},
     context_instance=RequestContext(request))
 
 
 def list_all_products(request):
-    products = product.objects.all()
+    products = Product.objects.all()
     return render_to_response('list_results.html', { 'products': products }, 
     context_instance=RequestContext(request))
 
@@ -52,7 +52,7 @@ def edit_form(request, product_id):
             return render_to_response("form_received.html", context_instance=RequestContext(request))
             # do something.
     else:
-        formset = productForm(queryset=product.objects.filter(id=product_id))
+        formset = productForm(queryset=Product.objects.filter(id=product_id))
     return render_to_response("form_item_edit.html", {
         "formset": formset, "product_info": product_info,
     }, context_instance=RequestContext(request))     

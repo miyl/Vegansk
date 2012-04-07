@@ -5,10 +5,8 @@ TEMPLATE_DEBUG = DEBUG
 
 # Lys: Trying to set relative project paths:
 import os
-import django
-DJANGO_ROOT = os.path.dirname(os.path.realpath(django.__file__))
-SITE_ROOT_OLD = os.path.dirname(__file__)
-SITE_ROOT = os.path.join(SITE_ROOT_OLD, '../')
+
+root = lambda x : os.path.join(os.path.dirname(__file__), x)
 
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
@@ -19,7 +17,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': os.path.join(SITE_ROOT, 'db.db'),                      # Or path to database file if using sqlite3.
+        'NAME': 'db.db',                      # Or path to database file if using sqlite3.
         'USER': '',                      # Not used with sqlite3.
         'PASSWORD': '',                  # Not used with sqlite3.
         'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
@@ -67,7 +65,7 @@ MEDIA_URL = ''
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/home/media/media.lawrence.com/static/"
-STATIC_ROOT = os.path.join(SITE_ROOT, 'static')
+STATIC_ROOT = root('/static/')
 
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
@@ -78,7 +76,7 @@ STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-os.path.join(SITE_ROOT, 'user_static'),
+	root('user_static'),
 )
 
 # List of finder classes that know how to find static files in
@@ -118,7 +116,7 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-	os.path.join(SITE_ROOT, 'templates'),
+	root('templates'),
 )
 
 INSTALLED_APPS = (
@@ -129,10 +127,11 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # Uncomment the next line to enable the admin:
-     'django.contrib.admin',
+    'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
-     'django.contrib.admindocs',
+    'django.contrib.admindocs',
     'django.contrib.comments',
+	'main',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -165,8 +164,8 @@ LOGGING = {
 }
 
 print("\n==================== LYS ADDED ====================")
-print("Django root: " + DJANGO_ROOT)
-print("Site root: " + SITE_ROOT)
+#print("Django root: " + DJANGO_ROOT)
+#print("Site root: " + SITE_ROOT)
 print("Static root: " + STATIC_ROOT)
 print("Template Dirs: " + str(TEMPLATE_DIRS))
 print("Database directory: " + str(DATABASES['default']))
