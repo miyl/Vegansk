@@ -8,18 +8,20 @@
 
 <h1>Tilføj</h1>
 
-Hvad ønsker du at tilføje?:
-<a href="/tilfoej-product/">Et produkt</a>
-<a href="/tilfoej-maerke/">Et mærke</a>
-<a href="/tilfoej-forretning/">En forretning</a>
-<a href="/tilfoej-ingrediens/">Et pngrediens</a>
+Hvad ønsker du at tilføje?:<br/>
+<a href="/tilfoej/product/">Et produkt</a>
+<a href="/tilfoej/brand/">Et mærke</a>
+<a href="/tilfoej/manufacturer/">En Producent</a>
+<a href="/tilfoej/store/">En forretning</a>
+<a href="/tilfoej/ingredient/">En ingrediens</a>
 
-<form action="/tilfoej/" method="post" > {% csrf_token %}
+<!-- 
 Hvad ønsker du at tilføje?:    <select class="types" name="type">
     <option value="product">Produkt</option>
     <option value="brand">Mærke</option>
     <option value="manufacturer">Producent</option>
-    <option value="product">Ingrediens</option>
+    <option value="product">Ingrediens</option> -->
+<form action="/tilfoej/product/" method="post" > {% csrf_token %}
     {{ formset }}
     <input type="submit" value="Tilføj" />
 </form>

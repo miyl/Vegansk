@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+
+{% block title %}Ingredienser{% endblock %}
+
+{% block head %}<link href="{{ STATIC_URL }}css/products.css" rel="stylesheet" type="text/css" />{% endblock %}
+
+{% block content %}
+
+<h1>Ingrediens: {{ingredient.name }}</h1>
+
+<div id="left">
+<p><span class="type">Navn:</span> {{ ingredient.name }}</p>
+<p><span class="type">Er ingrediensen vegansk:</span> {{ ingredient.get_vegan_display }}</p>
+
+{% if True %}<p><span class="type">Alias 1:</span> {{ ingredient.alias1 }}</p>{% endif %}
+{% if True %}<p><span class="type">Alias 2:</span> {{ ingredient.alias2 }}</p>{% endif %}
+{% if True %}<p><span class="type">Alias 3:</span> {{ ingredient.alias3 }}</p>{% endif %}
+
+<p><span class="type">Beskrivelse:</span> {{ ingredient.description }}</p>
+</div>
+
+<a href="rediger">Rediger ingrediens</a>
+
+</div>
+
+
+{% endblock %}

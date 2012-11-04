@@ -85,7 +85,7 @@ class Product(m.Model):
     manufacturers = m.ForeignKey(Manufacturer, verbose_name='Producent')
     stores = m.ManyToManyField(Store, verbose_name='Hvilke forretninger kan produktet fås i?')
     ingredients = m.ManyToManyField(Ingredient, verbose_name='Ingredienser')
-#    picture = m.ImageField(upload_to='user_static')
+    picture = m.ImageField(upload_to='product_images', blank=True, null=True)
     brand_manufacturer_contacted = m.TextField('Svar fra firmaet eller producenten bag ang. kilden til ingredienserne', blank=True, null=True)
     bio = m.BooleanField('Økologisk')
     fair_trade = m.BooleanField('Fair trade')

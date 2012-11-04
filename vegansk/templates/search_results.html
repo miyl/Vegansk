@@ -1,7 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
 <p>Du søgte efter: <strong>{{ query }}</strong></p>
 
 {% if products %}
-    <p>Fandt {{ products|length }} produkt{{ products|pluralize }}.</p>
+    <p>Fandt {{ products|length }} produkter. </p>
+<!--	produkt{{ products|pluralize }}.</p>     {% if products|length > 1 %}
+		produkter
+    {% else %}
+		produkt
+    {% endif %}-->
+
     <ul>
         {% for product in products %}
         <li><a href="../id/{{ product.id }}">{{ product.name }}</a></li>
@@ -10,3 +21,6 @@
 {% else %}
     <p>Ingen produkter matchede dine søgekriterier.</p>
 {% endif %}
+
+
+{% endblock %}

@@ -20,11 +20,12 @@
 	border: 0px;}
 
 #left {
+	float: left;
 	width: 50%;}
 
 #right {
 	width: 50%;
-	float: right;}
+	float: left;}
 
 .type {
     font-weight: bold;

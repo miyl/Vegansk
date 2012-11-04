@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 
+{% load thumbnail %}
+
 {% block title %}Produkter{% endblock %}
 
 {% block head %}<link href="{{ STATIC_URL }}css/products.css" rel="stylesheet" type="text/css" />{% endblock %}
@@ -37,7 +39,8 @@
 <div id="right">
 <p><span class="type">Billede:</span></p> 
 {% if product.picture %} 
-    <img src="{{ product.picture }}"></img>
+	<a href="{{ product.picture.url }}"/><img class ="picture" src="{% thumbnail product.picture 250x250 %}"/></a></div>
+<!--    <img src="{{ product.picture.url }}"></img> -->
 {% else %}
     <p>Billede mangler.</p>
 {% endif %}
