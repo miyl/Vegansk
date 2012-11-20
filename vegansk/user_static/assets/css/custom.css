@@ -1,0 +1,35 @@
+.brand {
+}
+
+.icon-heart {
+    vertical-align: 0%;
+}
+
+#submitClear {
+    display: block;
+}
+
+#links a {
+    display: block;
+}
+
+#links h2 {
+    font-size: 175%;
+    margin-bottom: 5px;
+}
+
+/* Coloring products when linking to them */
+a.vegan { color: rgb(126,176,62); }
+a.potvegan { color: #000; }
+a.notvegan { color: #c00; }
+
+/*
+.nav-list > .active > a, .nav-list > .active > a:hover {
+    background-color: rgb(0, 204, 36);
+    background-color: #9f4;
+}
+
+a {
+    color: rgb(0, 204, 36);
+
+} */

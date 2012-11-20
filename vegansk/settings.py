@@ -9,7 +9,7 @@ import os
 root = lambda x : os.path.join(os.path.dirname(__file__), x)
 
 ADMINS = (
-    # ('Your Name', 'your_email@example.com'),
+     ('lys', 's@s.se'),
 )
 
 MANAGERS = ADMINS
@@ -163,6 +163,12 @@ LOGGING = {
         },
     }
 }
+
+from django.conf.global_settings import TEMPLATE_CONTEXT_PROCESSORS as TCP
+
+TEMPLATE_CONTEXT_PROCESSORS = TCP + (
+    'django.core.context_processors.request',
+)
 
 print("\n==================== LYS ADDED ====================")
 #print("Django root: " + DJANGO_ROOT)

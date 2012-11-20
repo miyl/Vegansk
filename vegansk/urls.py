@@ -14,12 +14,18 @@ urlpatterns = patterns('main.views',
     url(r'^produktliste/$', 'list_all_products', name="list_all"),
     url(r'^soege-formular/$', 'search_form', name="search_form"),
     url(r'^soeg/$', 'search', name="search"),
-#    url(r'^tilfoej-produkt/$', 'add_form', name="add_form"),
     url(r'^tilfoej/(?P<category>\w*)/$', 'add_form', name="add_form"),
-#    url(r'^tilfoej-(?P<add_category>\[a-z]*)/$', 'add_form', name="add_form"),
     url(r'^id/(?P<product_id>\d+)/rediger/$', 'edit_form', name="edit_form"),
+    url(r'^links/$', 'links', name="links"),
+    
+    
+    url(r'^comments/', include('django.contrib.comments.urls')),
+
+#   url(r'^tilfoej-produkt/$', 'add_form', name="add_form"),
+#   url(r'^tilfoej-(?P<add_category>\[a-z]*)/$', 'add_form', name="add_form"),
 #   url(r'^produkt/(?P<q>[0-9a-zA-Z-]+)?/$', 'search_test', name="search_test"),
 #   url(r'^search-results/$', views.search),
+
 
 	# Examples:
     # url(r'^$', 'vegansk.views.home', name='home'),
@@ -30,6 +36,7 @@ urlpatterns = patterns('main.views',
 
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
+
 )
 
 #For development, media_root:

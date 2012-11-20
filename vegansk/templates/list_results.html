@@ -1,9 +1,13 @@
 {% extends "base.html" %}
 {% block title %}Liste af produkter{% endblock %}
 
-{% block nav2 %}class="current_page"{% endblock %}
+{% block pageName %}Liste af produkter{% endblock %}
+
+{% block nav2 %}class="active"{% endblock %}
+
 
 {% block content %}
+
   <h1>Liste af produkter</h1>
 <p>Der er <span class="bold">{{ products|length }}</span> produkter listet:</p>
 <ul>
@@ -15,4 +19,5 @@
     </li>
     {% endfor %}
 </ul>
+
 {% endblock %}

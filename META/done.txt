@@ -2,3 +2,9 @@ x 2012-01-26 Make ids work with searching
 x 2012-01-26 Make ids work with models, views and urls
 x 2012-02-03 Make the Vegan choices verbose_name work, so it's properly displayed on the site
 x 2012-02-03 Remove the 'verified' field from the public formulae
+x 2012-11-05 Add 'highlight current page in nav' feature
+x 2012-11-20 Make images work
+x 2012-11-20 Enable the formulae to be submitted
+x 2012-11-20 Make a public formula for submitting new data, identical to the one in the admin except that it requires moderator approval. Make a place in the admin to approve this data
+x 2012-11-20 Make a commenting system for each item
+x 2012-11-20 Make the ingredients page be capable of showing only the alias field(s) if they're filled out
