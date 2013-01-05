@@ -7,7 +7,7 @@ from django.conf import settings
 from django.contrib import admin
 admin.autodiscover()
 
-urlpatterns = patterns('main.views',
+urlpatterns = patterns('products.views',
     url(r'^$', 'index', name="index"),
 	url(r'^id/(?P<product_id>\d+)/$', 'product_page_by_id', name="product_page_by_id"),
 	url(r'^ingredient/id/(?P<ingredient_id>\d+)/$', 'ingredient_page_by_id', name="ingredient_page_by_id"),
@@ -17,8 +17,6 @@ urlpatterns = patterns('main.views',
     url(r'^tilfoej/(?P<category>\w*)/$', 'add_form', name="add_form"),
     url(r'^id/(?P<product_id>\d+)/rediger/$', 'edit_form', name="edit_form"),
     url(r'^links/$', 'links', name="links"),
-    
-    
     url(r'^comments/', include('django.contrib.comments.urls')),
 
 #   url(r'^tilfoej-produkt/$', 'add_form', name="add_form"),
@@ -37,6 +35,12 @@ urlpatterns = patterns('main.views',
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
 
+)
+
+urlpatterns += patterns('',
+  url(r'^login/$', 'django.contrib.auth.views.login', name="login"),
+  url(r'^logout/$', 'django.contrib.auth.views.logout', {'next_page': '/'}),
+#  url(r'^create/$', 'django.views.generic.create_update.create_object', {'model': 'products.product'}),
 )
 
 #For development, media_root:

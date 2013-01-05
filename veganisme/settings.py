@@ -1,4 +1,4 @@
-# Django settings for vegansk project.
+# Django settings for veganisme project.
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -107,10 +107,10 @@ MIDDLEWARE_CLASSES = (
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'vegansk.urls'
+ROOT_URLCONF = 'veganisme.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'vegansk.wsgi.application'
+WSGI_APPLICATION = 'veganisme.wsgi.application'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
@@ -131,7 +131,7 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     'django.contrib.admindocs',
     'django.contrib.comments',
-	'main',
+	'products',
 	'easy_thumbnails',
 )
 
@@ -169,6 +169,10 @@ from django.conf.global_settings import TEMPLATE_CONTEXT_PROCESSORS as TCP
 TEMPLATE_CONTEXT_PROCESSORS = TCP + (
     'django.core.context_processors.request',
 )
+
+LOGIN_URL = '/login/'
+LOGOUT_URL = '/logout/'
+
 
 print("\n==================== LYS ADDED ====================")
 #print("Django root: " + DJANGO_ROOT)

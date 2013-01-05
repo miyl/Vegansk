@@ -4,7 +4,7 @@
 import os, sys
 
 if __name__ == "__main__":
-    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "vegansk.settings")
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "veganisme.settings")
 
     from django.core.management import execute_from_command_line
 
@@ -12,7 +12,7 @@ if __name__ == "__main__":
 
 # The script itself:
 
-from main.models import Brand, Manufacturer, Store, Ingredient, Product
+from products.models import Brand, Manufacturer, Store, Ingredient, Product
 #from datetime import datetime
 
 Brand.objects.all().delete()

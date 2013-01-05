@@ -1,4 +1,4 @@
-Vegansk.dk
+Veganisme.dk: Veganske produkter
 ==========
 
 Idea:

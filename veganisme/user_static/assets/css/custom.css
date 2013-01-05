@@ -18,6 +18,16 @@
     margin-bottom: 5px;
 }
 
+#navv i {
+    padding-right: 5px;
+}
+
+
+/*
+.navbar-link {
+    text-decoration: none !important;
+}*/
+
 /* Coloring products when linking to them */
 a.vegan { color: rgb(126,176,62); }
 a.potvegan { color: #000; }

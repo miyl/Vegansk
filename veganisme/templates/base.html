@@ -16,13 +16,6 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <!-- Fav and touch icons -->
-    <link rel="shortcut icon" href="{{ STATIC_URL }}assets/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ STATIC_URL }}assets/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ STATIC_URL }}assets/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ STATIC_URL }}assets/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="{{ STATIC_URL }}assets/ico/apple-touch-icon-57-precomposed.png">
-
     <style type="text/css">
       body {
         padding-top: 60px;
@@ -49,16 +42,16 @@
             <span class="icon-bar"></span>
           </a>
           <a class="brand" href="/"><i class="icon-heart"></i> Veganisme</a>
-          <div class="nav-collapse collapse">
+          <div id="navv" class="nav-collapse collapse">
             <p class="navbar-text pull-right">
-            <a href="#" class="navbar-link"><i class="icon-pencil"></i> Username</a>
+              <a href="#" class="navbar-link"><i class="icon-pencil"></i>Username</a>
             </p>
             <ul class="nav">
-              <li {% block nav1 %}{% endblock %} ><a href="/">Hjem</a></li>
-              <li {% block nav2 %}{% endblock %} ><a href="/produktliste/">Produktliste</a></li>
-              <li {% block nav3 %}{% endblock %} ><a href="/tilfoej/product">Tilføj</a></li>
-              <li {% block nav4 %}{% endblock %} ><a href="#contact">Kontakt</a></li>
-              <li {% block nav5 %}{% endblock %} ><a href="/links">Links</a></li>
+              <li {% block nav1 %}{% endblock %} ><a href="/"><i class="icon-home"></i>Hjem</a></li>
+              <li {% block nav2 %}{% endblock %} ><a href="/produktliste/"><i class="icon-th-list"></i>Produktliste</a></li>
+              <li {% block nav3 %}{% endblock %} ><a href="/tilfoej/product"><i class="icon-share-alt"></i>Tilføj</a></li>
+              <li {% block nav4 %}{% endblock %} ><a href="#contact"><i class="icon-envelope"></i>Kontakt</a></li>
+              <li {% block nav5 %}{% endblock %} ><a href="/links"><i class="icon-globe"></i>Links</a></li>
             </ul>
         </div><!--/.nav-collapse -->
 
@@ -79,7 +72,8 @@
         </div>
 
         <div class="span3">
-          <div class="well sidebar-nav">
+            <div class="well sidebar-nav">
+<img src="{{ STATIC_URL }}img/vegan-logo.jpg">
             <ul class="nav nav-list">
               <li class="nav-header">Nye veganske produkter</li>
  
@@ -103,7 +97,12 @@
       <hr>
 
       <footer>
-      <p>&copy; CopyLeft. Se kildekoden <a href="http://www.github.com/xlys/vegansk/">her.</a></p>
+      <p><!--[if lte IE 8]><span style="filter: FlipH; -ms-filter: "FlipH"; display: inline-block;"><![endif]-->
+<span style="-moz-transform: scaleX(-1); -o-transform: scaleX(-1); -webkit-transform: scaleX(-1); transform: scaleX(-1); display: inline-block;">
+    &copy;
+</span>
+<!--[if lte IE 8]></span><![endif]-->
+Designet benytter <a href="http://twitter.github.com/bootstrap">Bootstrap</a>, men alt indhold er CopyLeft. Se kildekoden <a href="http://www.github.com/xlys/vegansk/">her.</a></p>
       </footer>
 
     </div><!--/.fluid-container-->

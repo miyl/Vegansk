@@ -2,21 +2,8 @@
 from django.db import models as m
 from django.forms import ModelForm
 from django.contrib.auth.models import User
-
 # For user creation and their passwords:
 from django.forms import CharField, Form, PasswordInput
-
-#class User(m.Model):
-#	name = m.CharField('Brugernavn', max_length=35, default=1,)
-#	password = m.CharField('Kodeord', max_length=50)
-#	email_address = m.EmailField('E-mail-adresse')
-#	created = m.DateTimeField('Registreringsdato', auto_now_add=True, editable=False)
-
-#	def __unicode__(self):
-#		return self.name
-	
-#	class Meta:
-#		ordering = ['name']
 
 
 class Brand(m.Model):
@@ -128,6 +115,7 @@ class Product(m.Model):
     gluten = m.NullBooleanField('Indeholder gluten')
     soy = m.NullBooleanField('Indeholder soja')
     nuts = m.NullBooleanField('Indeholder nødder')
+    featured = m.NullBooleanField('Hilighted')
 
     created = m.DateTimeField('Oprettet.', auto_now_add=True, editable=False)
     last_updated = m.DateTimeField('Senest opdateret.', auto_now=True, editable=False)
@@ -185,12 +173,3 @@ class ingredientForm(ModelForm):
 class storeForm(ModelForm):
     class Meta:
         model = Store
-
-#class userForm(ModelForm):
-#	password = CharField(widget=PasswordInput())
-#	class Meta:
-#		model = User
-
-class UserCreationForm(ModelForm):
-	class Meta:
-		model = User

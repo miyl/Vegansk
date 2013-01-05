@@ -6,3 +6,4 @@
 (B) Make a user system
 (D) Integrate "Links: Andre Dyrearters Følelser, Bevidsthed mm."-vegkon page as a small secondary feature with an "add" formula. Improve the organisation of the data in relation to the quantity there might turn out to be"
 (A) HTML and CSS work. Bootstrap?
+Use tables in some ways? Like the list of products? Maybe add a "Featured" field in the database for featured products and maybe brands or even stores (vegan ones)?

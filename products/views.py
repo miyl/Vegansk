@@ -6,7 +6,7 @@ from django.http import HttpResponse
 from django.template import RequestContext
 
 # Models:
-from main.models import Product, Store, Ingredient, Manufacturer, Brand
+from products.models import Product, Store, Ingredient, Manufacturer, Brand
 from django.forms.models import modelformset_factory
 
 newest_vegan = Product.objects.filter(vegan='V').order_by('-created')[:10]
