@@ -1,2 +1,6 @@
 *.swp
 *.pyc
+*.pyo
+*.db
+settings.py
+.fuse_hidden*
