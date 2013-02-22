@@ -7,14 +7,13 @@
 #content ul {
 	padding: 0 0 0 0;
 	margin: 0;
-	display: inline;
-	list-style-type: none;
-	}
+}
 
 #content li {
+	display: inline;
+	list-style-type: none;
 	margin: 0px;
 	padding: 0px;
-	display: inline;
 	width: 25px;
 }
 
@@ -31,13 +30,13 @@
 }
 
 #right {
-	float: left;
+	float: right;
 	width: 50%;
 }
 
 .type {
-    font-weight: bold;
     color: #000; 
+    font-weight: bold;
 }
 
 .list {

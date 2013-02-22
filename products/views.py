@@ -44,16 +44,17 @@ def list_all_products(request):
 
 def add_form(request, category):
     if category == 'product':
-       category = Product
+        category = Product
     if category == 'ingredient':
-	   category = Ingredient
+	    category = Ingredient
     if category == 'manufacturer':
-	    category = Manufacturer
+        category = Manufacturer
     if category == 'store':
-	    category = Store
+        category = Store
     if category == 'brand':
-	    category = Brand
-    productForm = modelformset_factory(category, exclude=('verified',))
+        category = Brand
+    catName = category._meta.verbose_name
+    productForm = modelformset_factory(category, exclude=('verified','featured'))
     if request.method == 'POST':
         formset = productForm(request.POST, request.FILES)
         if formset.is_valid():
@@ -63,11 +64,11 @@ def add_form(request, category):
     else:
         formset = productForm(queryset=category.objects.none())
     return render_to_response("form_item_add.html", {
-        "formset": formset, "category": category, }, context_instance=RequestContext(request))     
+        "formset": formset, "category": category,"catName": catName }, context_instance=RequestContext(request))     
 
 
 def edit_form(request, product_id):
-    productForm = modelformset_factory(Product, extra=0, exclude=('verified', 'name'))
+    productForm = modelformset_factory(Product, extra=0, exclude=('verified', 'name', 'featured'))
     product_info = Product.objects.get(id=product_id)
     if request.method == 'POST':
         formset = productForm(request.POST, request.FILES)

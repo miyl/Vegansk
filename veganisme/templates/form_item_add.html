@@ -1,19 +1,19 @@
 {% extends "form_item_base.html" %}
 
-{% block title %}Tilføj{% endblock %}
-
-{% block pageName %}Tilføj{% endblock %}
+{% block title %}Tilføj {{catName}}{% endblock %}
 
 {% block nav3 %}class="active"{% endblock %}
 
 {% block content %}
 
-<h1>Tilføj</h1>
+<h1>Tilføj {{catName}}</h1>
+
+{% comment %}{% get_verbose_name Product %}{% endcomment %}
 
 Hvad ønsker du at tilføje?:<br/>
 <a class="btn" href="/tilfoej/product/">Produkt</a>
 <a class="btn" href="/tilfoej/brand/">Mærke</a>
-<a class="btn" href="/tilfoej/manufacturer/">Fabrikant</a>
+<a class="btn" href="/tilfoej/manufacturer/">Producent</a>
 <a class="btn" href="/tilfoej/store/">Forretning</a>
 <a class="btn" href="/tilfoej/ingredient/">Ingrediens</a>
 
