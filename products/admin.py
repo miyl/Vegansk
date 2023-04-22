@@ -1,5 +1,5 @@
 from django.contrib import admin
-from models import Brand, Manufacturer, Store, Ingredient, Product
+from .models import Brand, Manufacturer, Store, Ingredient, Product
 
 class GeneralAdmin(admin.ModelAdmin):
     search_fields = ('name',)

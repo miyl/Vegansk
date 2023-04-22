@@ -15,10 +15,10 @@ class Brand(m.Model):
 
     created = m.DateTimeField('Oprettet.', auto_now_add=True, editable=False)
     last_updated = m.DateTimeField('Senest opdateret.', auto_now=True, editable=False)
-    added_by = m.ForeignKey(User, verbose_name='Tilføjet af', default=1, editable=False)
+    added_by = m.ForeignKey(User, verbose_name='Tilføjet af', default=1, on_delete=m.SET_NULL, null=True, editable=False)
     verified = m.BooleanField('Sæt hak i dette felt for at godkende informationerne')
 
-    def __unicode__(self):
+    def __str__(self):
         return self.name
 
     class Meta:
@@ -36,10 +36,10 @@ class Manufacturer(m.Model):
 
     created = m.DateTimeField('Oprettet.', auto_now_add=True, editable=False)
     last_updated = m.DateTimeField('Senest opdateret.', auto_now=True, editable=False)
-    added_by = m.ForeignKey(User, verbose_name='Tilføjet af', default=1, editable=False)
+    added_by = m.ForeignKey(User, verbose_name='Tilføjet af', default=1, on_delete=m.SET_NULL, null=True, editable=False)
     verified = m.BooleanField('Sæt hak i dette felt for at godkende informationerne')
 
-    def __unicode__(self):
+    def __str__(self):
         return self.name
 
     class Meta:
@@ -48,7 +48,7 @@ class Manufacturer(m.Model):
         verbose_name_plural = "fabrikanter"
 
 
-class Store(m.Model): 
+class Store(m.Model):
     name = m.CharField('Navn', max_length=25, unique=True)
     home_page = m.URLField('Hjemmeside', max_length=25, blank=True, null=True)
     email_address = m.EmailField('E-mail-adresse', blank=True, null=True)
@@ -56,10 +56,10 @@ class Store(m.Model):
     only_vegan_products = m.BooleanField('Forretningen sælger udelukkende veganske produkter.')
     created = m.DateTimeField('Oprettet.', auto_now_add=True, editable=False)
     last_updated = m.DateTimeField('Senest opdateret.', auto_now=True, editable=False)
-    added_by = m.ForeignKey(User, verbose_name='Tilføjet af', default=1, editable=False)
+    added_by = m.ForeignKey(User, verbose_name='Tilføjet af', default=1, on_delete=m.SET_NULL, null=True, editable=False)
     verified = m.BooleanField('Sæt hak i dette felt for at godkende informationerne?')
 
-    def __unicode__(self):
+    def __str__(self):
         return self.name
 
     class Meta:
@@ -83,11 +83,11 @@ class Ingredient(m.Model):
 
     created = m.DateTimeField('Oprettet.', auto_now_add=True, editable=False)
     last_updated = m.DateTimeField('Senest opdateret.', auto_now=True, editable=False)
-    added_by = m.ForeignKey(User, verbose_name='Tilføjet af', default=1, editable=False)
+    added_by = m.ForeignKey(User, verbose_name='Tilføjet af', default=1, on_delete=m.SET_NULL, null=True, editable=False)
     verified = m.BooleanField('Sæt hak i dette felt for at godkende informationerne')
 
 
-    def __unicode__(self):
+    def __str__(self):
         return self.name
 
     class Meta:
@@ -104,26 +104,26 @@ class Product(m.Model):
     )
     vegan = m.CharField('Vegansk', max_length=1, choices=VEGAN_CHOICES)
     name = m.CharField('Navn', max_length=50)
-    brands = m.ForeignKey(Brand, verbose_name='Mærke')
-    manufacturers = m.ForeignKey(Manufacturer, verbose_name='Producent')
+    brands = m.ForeignKey(Brand, verbose_name='Mærke', on_delete=m.PROTECT)
+    manufacturers = m.ForeignKey(Manufacturer, verbose_name='Producent', on_delete=m.PROTECT)
     stores = m.ManyToManyField(Store, verbose_name='Hvilke forretninger kan produktet fås i?')
     ingredients = m.ManyToManyField(Ingredient, verbose_name='Ingredienser')
     picture = m.ImageField(upload_to='product_images', verbose_name='billede', blank=True, null=True)
     brand_manufacturer_contacted = m.TextField('Svar fra firmaet eller producenten bag ang. kilden til ingredienserne', blank=True, null=True)
     bio = m.BooleanField('Økologisk')
     fair_trade = m.BooleanField('Fair trade')
-    gluten = m.NullBooleanField('Indeholder gluten')
-    soy = m.NullBooleanField('Indeholder soja')
-    nuts = m.NullBooleanField('Indeholder nødder')
-    featured = m.NullBooleanField('Hilighted')
+    gluten = m.BooleanField('Indeholder gluten', null=True)
+    soy = m.BooleanField('Indeholder soja', null=True)
+    nuts = m.BooleanField('Indeholder nødder', null=True)
+    featured = m.BooleanField('Hilighted', null=True)
 
     created = m.DateTimeField('Oprettet.', auto_now_add=True, editable=False)
     last_updated = m.DateTimeField('Senest opdateret.', auto_now=True, editable=False)
-    added_by = m.ForeignKey(User, verbose_name='Tilføjet af', default=1, editable=False)
+    added_by = m.ForeignKey(User, verbose_name='Tilføjet af', default=1, on_delete=m.SET_NULL, null=True, editable=False)
     verified = m.BooleanField('Sæt hak i dette felt for at godkende informationerne')
 
 
-    def __unicode__(self):
+    def __str__(self):
         return self.name
 
     def csstags(self):
@@ -157,19 +157,24 @@ class Product(m.Model):
 class productForm(ModelForm):
     class Meta:
         model = Product
+        fields = '__all__'
 
 class brandForm(ModelForm):
     class Meta:
         model = Brand
+        fields = '__all__'
 
 class manufacturerForm(ModelForm):
     class Meta:
         model = Manufacturer
+        fields = '__all__'
 
 class ingredientForm(ModelForm):
     class Meta:
         model = Ingredient
+        fields = '__all__'
 
 class storeForm(ModelForm):
     class Meta:
         model = Store
+        fields = '__all__'
